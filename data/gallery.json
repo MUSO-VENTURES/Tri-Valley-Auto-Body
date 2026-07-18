@@ -2,9 +2,9 @@
   {
     "id": "g1",
     "category": "Collision Repair",
-    "title": "Rear-end collision, 2021 Honda CR-V",
-    "before": "",
-    "after": "",
+    "title": "Signature repair — collision damage restored",
+    "before": "images/gallery/signature-before.jpg",
+    "after": "images/gallery/signature-after.jpg",
     "swatch": "tex1"
   },
   {

@@ -11,6 +11,8 @@
 </head>
 <body>
 
+<img id="page-watermark" src="images/logo-watermark.png" alt="">
+
 <div class="topbar">
   <div class="wrap">
     <div class="left">
@@ -28,7 +30,7 @@
 <header class="main-nav">
   <div class="wrap">
     <a class="logo" href="#top" aria-label="Tri-Valley Auto Body — home">
-      <div class="logo-text"><div class="l1">Tri-Valley</div><div class="l2">Auto Body</div></div>
+      <img class="brand-logo" src="images/logo.png" alt="Tri-Valley Auto Body">
     </a>
     <nav class="links">
       <a href="#services">Services</a>
@@ -49,7 +51,7 @@
 <div class="nav-scrim"></div>
 
 <!-- HERO -->
-<section class="hero-photo grain" id="top" style="background:linear-gradient(120deg,#1c1d22,#0b0c0f 60%);">
+<section class="hero-photo grain" id="top" style="background-image:url('images/hero-shop.jpg');">
   <div class="wrap inner">
     <span class="eyebrow">Family-Owned Since 1980</span>
     <h1 class="headline">Built to<br>Standard.</h1>
@@ -133,8 +135,8 @@
       <p>Drag the slider — this is the standard every car leaves our shop meeting.</p>
     </div>
     <div class="slider-frame">
-      <div class="panel panel-before tex3"><span class="panel-tag">Before</span></div>
-      <div class="panel panel-after tex2"><span class="panel-tag">After</span></div>
+      <div class="panel panel-before" style="background-image:url('images/gallery/signature-before.jpg');"><span class="panel-tag">Before</span></div>
+      <div class="panel panel-after" style="background-image:url('images/gallery/signature-after.jpg');"><span class="panel-tag">After</span></div>
       <div class="slider-handle"></div>
       <input type="range" class="slider-input" min="0" max="100" value="50" aria-label="Drag to compare before and after">
     </div>
@@ -401,7 +403,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <div class="logo-text"><div class="l1" style="color:var(--text-hi)">Tri-Valley</div><div class="l2">Auto Body</div></div>
+        <img class="foot-logo-img" src="images/logo-footer.png" alt="Tri-Valley Auto Body">
         <p style="font-size:13.5px;color:var(--text-lo);max-width:270px;margin-top:16px;">Family-owned and operated collision repair, serving Livermore and the Tri-Valley since 1980.</p>
         <div class="foot-social"><a href="#" title="Google">G</a><a href="#" title="Yelp">Y</a><a href="#" title="Facebook">f</a><a href="#" title="Instagram">IG</a></div>
       </div>

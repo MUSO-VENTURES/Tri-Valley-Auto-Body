@@ -75,6 +75,18 @@ header.main-nav{background:var(--ink);border-bottom:1px solid var(--line-dark);p
 .main-nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:20px 32px;}
 .logo-text .l1{font-family:var(--display);font-size:22px;color:var(--text-hi);letter-spacing:0.02em;line-height:1;}
 .logo-text .l2{font-family:var(--body);font-size:10.5px;font-weight:700;color:var(--accent);letter-spacing:0.18em;text-transform:uppercase;margin-top:3px;}
+.logo img.brand-logo{height:52px;width:auto;display:block;}
+.foot-logo-img{height:40px;width:auto;display:block;margin-bottom:16px;}
+
+/* Fixed, very faint full-page watermark logo — sits behind all content */
+#page-watermark{
+  position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:min(87.5vw,1125px);height:auto;
+  opacity:0.05;z-index:0;pointer-events:none;
+}
+body > header, body > section, body > footer, body > div.nav-scrim, body > button.chat-trigger{
+  position:relative;z-index:1;
+}
 
 nav.links{display:flex;gap:32px;font-size:13px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;align-items:center;}
 nav.links a{color:var(--text-lo);transition:color .15s ease;padding:4px 0;border-bottom:2px solid transparent;}
