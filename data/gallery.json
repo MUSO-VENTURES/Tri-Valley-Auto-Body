@@ -1,0 +1,50 @@
+[
+  {
+    "id": "g1",
+    "category": "Collision Repair",
+    "title": "Rear-end collision, 2021 Honda CR-V",
+    "before": "",
+    "after": "",
+    "swatch": "tex1"
+  },
+  {
+    "id": "g2",
+    "category": "Paint",
+    "title": "Full repaint, 2019 Ford F-150",
+    "before": "",
+    "after": "",
+    "swatch": "tex2"
+  },
+  {
+    "id": "g3",
+    "category": "Paintless Dent Repair",
+    "title": "Hail damage, 2020 Toyota Camry",
+    "before": "",
+    "after": "",
+    "swatch": "tex3"
+  },
+  {
+    "id": "g4",
+    "category": "Frame Straightening",
+    "title": "Front-end impact, 2018 Subaru Outback",
+    "before": "",
+    "after": "",
+    "swatch": "tex4"
+  },
+  {
+    "id": "g5",
+    "category": "Auto Glass",
+    "title": "Windshield + trim replacement, 2022 Mazda CX-5",
+    "before": "",
+    "after": "",
+    "swatch": "tex5"
+  },
+  {
+    "id": "g6",
+    "category": "Collision Repair",
+    "title": "Side panel + door, 2017 Chevrolet Silverado",
+    "before": "",
+    "after": "",
+    "swatch": "tex1"
+  }
+]

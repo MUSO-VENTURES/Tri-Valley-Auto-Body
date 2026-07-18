@@ -1,0 +1,12 @@
+[
+  { "name": "State Farm", "phone": "1-800-732-5246", "drp": true,  "claimsUrl": "https://www.statefarm.com/claims" },
+  { "name": "GEICO",      "phone": "1-800-841-3000", "drp": true,  "claimsUrl": "https://www.geico.com/claims/" },
+  { "name": "Progressive","phone": "1-800-274-4499", "drp": true,  "claimsUrl": "https://www.progressive.com/claims/" },
+  { "name": "Allstate",   "phone": "1-800-255-7828", "drp": false, "claimsUrl": "https://www.allstate.com/claims" },
+  { "name": "Farmers",    "phone": "1-800-435-7764", "drp": true,  "claimsUrl": "https://www.farmers.com/claims/" },
+  { "name": "USAA",       "phone": "1-800-531-8722", "drp": true,  "claimsUrl": "https://www.usaa.com/claims" },
+  { "name": "Mercury",    "phone": "1-800-503-3724", "drp": false, "claimsUrl": "https://www.mercuryinsurance.com/claims.html" },
+  { "name": "Liberty Mutual", "phone": "1-800-225-2467", "drp": false, "claimsUrl": "https://www.libertymutual.com/claims" },
+  { "name": "Travelers",  "phone": "1-800-252-4633", "drp": false, "claimsUrl": "https://www.travelers.com/claims" },
+  { "name": "Nationwide", "phone": "1-800-421-3535", "drp": false, "claimsUrl": "https://www.nationwide.com/personal/claims/" }
+]
