@@ -190,26 +190,38 @@
     window.addEventListener("scroll", update, { passive: true });
   }
 
-  /* ---------- Hero parallax ----------
-     Translates a background layer that's deliberately sized taller than
-     its box, instead of using CSS background-attachment:fixed — that
-     approach sizes background-size:cover against the viewport instead
-     of the element, which was cropping the sides of the hero photo
-     unpredictably depending on window shape. This JS version keeps the
-     crop amount fixed and controlled instead. */
+  /* ---------- Hero background lock ----------
+     Pins the hero photo to the top of the viewport (position:fixed,
+     sized to the hero's own height) for exactly as long as the hero
+     section is scrolling past, so the image holds still on screen
+     while the headline scrolls up over it. Unpins once the section has
+     fully scrolled by, so it never covers later content.
+
+     Deliberately NOT using CSS background-attachment:fixed — that
+     sizes background-size:cover against the viewport instead of the
+     element, which crops the sides of the photo unpredictably
+     depending on window shape. Sizing the locked box to the hero's own
+     measured height keeps the aspect ratio (and crop) identical to the
+     unlocked state. */
   function initHeroParallax() {
     var bg = document.querySelector("[data-parallax]");
     if (!bg) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
-
     var section = bg.closest(".hero-photo");
+    if (!section) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
     var ticking = false;
+    var heroHeight = 0;
+
+    function measure() {
+      heroHeight = section.offsetHeight;
+    }
 
     function update() {
       var rect = section.getBoundingClientRect();
-      var progress = Math.min(Math.max(-rect.top, 0), rect.height);
-      bg.style.transform = "translateY(" + progress * 0.25 + "px)";
+      var inRange = rect.top <= 0 && rect.bottom > 0;
+      bg.classList.toggle("is-locked", inRange);
+      bg.style.height = inRange ? heroHeight + "px" : "";
       ticking = false;
     }
     function onScroll() {
@@ -219,9 +231,13 @@
       }
     }
 
+    measure();
     update();
     window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", update);
+    window.addEventListener("resize", function () {
+      measure();
+      update();
+    });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
