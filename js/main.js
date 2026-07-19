@@ -190,41 +190,12 @@
     window.addEventListener("scroll", update, { passive: true });
   }
 
-  /* ---------- Hero sticky background sizing ----------
-     .hero-photo-bg locks in place via CSS position:sticky while its
-     wrapper scrolls past, then releases automatically once the wrapper
-     is gone — no scroll-tracking JS needed for that part. But sticky
-     only has room to "stick" if its containing block is taller than
-     the sticky element itself (zero height difference = zero stick
-     range), so the wrapper is sized slightly taller (1.25x) than the
-     natural photo-band height here — just enough lock/reveal room for
-     the headline to scroll up and off before the next section takes
-     over, without leaving a dead empty gap in between. */
-  function initHeroStickyBg() {
-    var bg = document.querySelector(".hero-photo-bg");
-    var wrap = document.querySelector(".hero-photo-wrap");
-    var inner = wrap && wrap.querySelector(".inner");
-    if (!bg || !wrap || !inner) return;
-    var RATIO = 420 / 1376; // native photo aspect ratio (height / width)
-
-    function sync() {
-      var bandHeight = wrap.offsetWidth * RATIO;
-      wrap.style.height = bandHeight * 1.25 + "px";
-      bg.style.height = bandHeight + "px";
-      inner.style.height = bandHeight + "px";
-    }
-    sync();
-    window.addEventListener("resize", sync);
-    window.addEventListener("load", sync);
-  }
-
   document.addEventListener("DOMContentLoaded", function () {
     initMobileNav();
     initSliders();
     initLangToggle();
     initScrollSpy();
     initNavScrollState();
-    initHeroStickyBg();
   });
 
   window.TVAB = window.TVAB || {};

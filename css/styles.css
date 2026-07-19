@@ -132,16 +132,16 @@ nav.links a[aria-current="page"]{color:var(--text-hi);border-color:var(--accent)
 }
 
 /* HERO PHOTO BAND (home) */
-.hero-photo-wrap{position:relative;color:var(--text-hi);padding:0;}
+.hero-photo-wrap{position:relative;color:var(--text-hi);aspect-ratio:1376/420;overflow:hidden;padding:0;}
 .hero-photo-bg{
-  position:sticky;top:0;z-index:0;
+  position:absolute;inset:0;z-index:0;
   background-size:cover;background-position:center;
 }
 .hero-photo-bg::after{
   content:"";position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.15) 38%,rgba(0,0,0,.6) 100%);
 }
-.hero-photo-wrap .inner{position:absolute;top:0;left:0;right:0;z-index:2;display:flex;flex-direction:column;justify-content:center;padding-top:48px;padding-bottom:48px;}
+.hero-photo-wrap .inner{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;padding-top:48px;padding-bottom:48px;}
 .hero-photo-wrap .headline{font-size:56px;line-height:0.98;max-width:640px;}
 .hero-photo-wrap .meta-row{display:flex;gap:26px;flex-wrap:wrap;margin-top:24px;}
 .hero-photo-wrap .meta-chip{color:var(--text-lo);}
