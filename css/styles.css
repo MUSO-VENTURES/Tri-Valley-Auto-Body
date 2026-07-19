@@ -218,6 +218,13 @@ section{padding:96px 0;position:relative;scroll-margin-top:96px;}
 .p-step h4{font-family:var(--body);font-weight:700;font-size:16px;letter-spacing:0.02em;text-transform:uppercase;color:var(--text-hi);margin-bottom:8px;}
 .p-step p{font-size:14px;color:var(--text-lo);margin:0;}
 
+/* ABOUT */
+.about-grid{max-width:1080px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+@media (max-width:820px){.about-grid{grid-template-columns:1fr;gap:36px;}}
+.about-photo{margin:0;}
+.about-photo img{width:100%;height:auto;display:block;filter:grayscale(1) contrast(1.05);border:1px solid var(--line-light);}
+.about-photo figcaption{margin-top:12px;font-size:12.5px;color:var(--body-soft);letter-spacing:0.02em;}
+
 /* TEAM */
 .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;}
 @media (max-width:900px){.team-grid{grid-template-columns:1fr 1fr;}}

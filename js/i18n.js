@@ -89,8 +89,9 @@
       about: {
         eyebrow: "Our Story",
         heading: "Three Generations, One Standard.",
-        p1: "Tri-Valley Auto Body opened its doors on 1st Street in 1980. Four and a half decades later, we're still on the same street, still family-run, and still standing behind every repair with a lifetime workmanship warranty.",
-        p2: "What's changed is the equipment: computerized frame measuring, ADAS calibration, and a down-draft paint booth that lets us match any factory finish. What hasn't changed is who answers the phone when you call."
+        p1: "Tri-Valley Auto Body is a family-owned and operated auto body repair shop with decades of experience providing auto body repair services to the entire Tri-Valley area. Since our inception in 1980, owner Fernando Romero Sr. has offered services with a family-based approach, offering customers customized collision repair processes that exceed expectations.",
+        p2: "From the initial point of contact, our family will treat you like family. Now in its third generation, Tri-Valley Auto Body understands the importance of community, family and quality collision repair services. For us, they all go hand in hand to provide exceptional customer service with compassion and a commitment to your safety.",
+        p3: "Our family would like to invite you to experience the Tri-Valley Auto Body difference."
       },
       team: {
         eyebrow: "Meet The Team",
@@ -231,8 +232,9 @@
       about: {
         eyebrow: "Nuestra Historia",
         heading: "Tres Generaciones, Un Solo Estándar.",
-        p1: "Tri-Valley Auto Body abrió sus puertas en 1st Street en 1980. Cuatro décadas y media después, seguimos en la misma calle, seguimos siendo un negocio familiar y seguimos respaldando cada reparación con una garantía de por vida en la mano de obra.",
-        p2: "Lo que ha cambiado es el equipo: medición computarizada del chasis, calibración ADAS y una cabina de pintura de flujo descendente que nos permite igualar cualquier acabado de fábrica. Lo que no ha cambiado es quién contesta el teléfono cuando usted llama."
+        p1: "Tri-Valley Auto Body es un taller de reparación de carrocerías de propiedad y operación familiar, con décadas de experiencia brindando servicios de reparación de carrocerías a toda la zona de Tri-Valley. Desde nuestra fundación en 1980, el propietario Fernando Romero Sr. ha ofrecido servicios con un enfoque familiar, brindando a los clientes procesos de reparación de colisiones personalizados que superan las expectativas.",
+        p2: "Desde el primer contacto, nuestra familia lo tratará como parte de la familia. Ahora en su tercera generación, Tri-Valley Auto Body comprende la importancia de la comunidad, la familia y los servicios de reparación de colisiones de calidad. Para nosotros, todo eso va de la mano para brindar un servicio al cliente excepcional con compasión y un compromiso con su seguridad.",
+        p3: "Nuestra familia le invita a experimentar la diferencia de Tri-Valley Auto Body."
       },
       team: {
         eyebrow: "Conozca Al Equipo",
@@ -373,8 +375,9 @@
       about: {
         eyebrow: "قصتنا",
         heading: "ثلاثة أجيال، معيار واحد.",
-        p1: "افتتحت Tri-Valley Auto Body أبوابها في شارع 1st عام 1980. وبعد أربعة عقود ونصف، ما زلنا في نفس الشارع، وما زلنا شركة عائلية، وما زلنا ندعم كل إصلاح بضمان مدى الحياة على جودة العمل.",
-        p2: "ما تغيّر هو المعدات: القياس الحاسوبي للهيكل، ومعايرة أنظمة ADAS، وغرفة طلاء بالسحب الهوائي تتيح لنا مطابقة أي تشطيب من المصنع. أما ما لم يتغيّر فهو من يرد على الهاتف عندما تتصل."
+        p1: "Tri-Valley Auto Body هي ورشة إصلاح هياكل سيارات مملوكة ومُدارة عائليًا، ولديها عقود من الخبرة في تقديم خدمات إصلاح هياكل السيارات لكامل منطقة Tri-Valley. منذ تأسيسها عام 1980، يقدم المالك Fernando Romero Sr. خدماته بأسلوب عائلي، ويوفر للعملاء عمليات إصلاح تصادم مخصصة تفوق التوقعات.",
+        p2: "منذ لحظة التواصل الأولى، ستعاملك عائلتنا كأحد أفرادها. والآن في جيلها الثالث، تدرك Tri-Valley Auto Body أهمية المجتمع والعائلة وخدمات إصلاح التصادم عالية الجودة. بالنسبة لنا، كل ذلك يسير جنبًا إلى جنب لتقديم خدمة عملاء استثنائية بتعاطف والتزام بسلامتك.",
+        p3: "تتشرف عائلتنا بدعوتك لتجربة الفرق الذي تقدمه Tri-Valley Auto Body."
       },
       team: {
         eyebrow: "تعرّف على الفريق",
@@ -515,8 +518,9 @@
       about: {
         eyebrow: "我们的故事",
         heading: "三代传承，同一标准。",
-        p1: "Tri-Valley Auto Body于1980年在1st Street开业。四十五年后，我们依然在同一条街上，依然是家族经营，依然为每一次维修提供终身工艺质保。",
-        p2: "改变的是设备:电脑车架测量、ADAS校准，以及能匹配任何原厂漆面的下吸式喷漆房。没有改变的是接听您电话的人。"
+        p1: "Tri-Valley Auto Body是一家家族经营的汽车车身维修店，拥有数十年为整个Tri-Valley地区提供汽车车身维修服务的经验。自1980年创立以来，店主Fernando Romero Sr.始终以家族式理念提供服务，为客户提供超出预期的定制化碰撞维修方案。",
+        p2: "从与我们接触的第一刻起，我们家族就会像对待家人一样对待您。如今已传承至第三代，Tri-Valley Auto Body深知社区、家庭以及高品质碰撞维修服务的重要性。对我们而言，这些理念相辅相成，共同带来充满关怀、并对您的安全高度负责的卓越客户服务。",
+        p3: "我们全家诚挚邀请您亲身体验Tri-Valley Auto Body的与众不同。"
       },
       team: {
         eyebrow: "认识我们的团队",
@@ -657,8 +661,9 @@
       about: {
         eyebrow: "અમારી વાર્તા",
         heading: "ત્રણ પેઢી, એક ધોરણ.",
-        p1: "Tri-Valley Auto Body એ 1980માં 1st Street પર તેના દરવાજા ખોલ્યા. સાડા ચાર દાયકા પછી, અમે હજુ પણ એ જ શેરીમાં છીએ, હજુ પણ કૌટુંબિક છીએ, અને દરેક રિપેર પાછળ લાઈફટાઈમ વર્કમેનશિપ વોરંટી સાથે ઊભા છીએ.",
-        p2: "જે બદલાયું છે તે છે સાધનો: કમ્પ્યુટરાઈઝ્ડ ફ્રેમ મેઝરિંગ, ADAS કેલિબ્રેશન, અને ડાઉન-ડ્રાફ્ટ પેઈન્ટ બૂથ જે અમને કોઈપણ ફેક્ટરી ફિનિશ મેચ કરવા દે છે. જે નથી બદલાયું તે છે કે તમે કૉલ કરો ત્યારે ફોન કોણ ઉપાડે છે."
+        p1: "Tri-Valley Auto Body એ કૌટુંબિક માલિકીની અને સંચાલિત ઓટો બોડી રિપેર શોપ છે, જેની પાસે સમગ્ર Tri-Valley વિસ્તારને ઓટો બોડી રિપેર સેવાઓ પ્રદાન કરવાનો દાયકાઓનો અનુભવ છે. 1980માં અમારી શરૂઆતથી, માલિક Fernando Romero Sr. એ કૌટુંબિક અભિગમ સાથે સેવાઓ પ્રદાન કરી છે, ગ્રાહકોને કસ્ટમાઇઝ્ડ કોલિઝન રિપેર પ્રક્રિયાઓ ઓફર કરી છે જે અપેક્ષાઓ કરતાં વધી જાય છે.",
+        p2: "પ્રારંભિક સંપર્કના બિંદુથી જ, અમારો પરિવાર તમને પરિવારની જેમ વર્તાવશે. હવે તેની ત્રીજી પેઢીમાં, Tri-Valley Auto Body સમુદાય, પરિવાર અને ગુણવત્તાયુક્ત કોલિઝન રિપેર સેવાઓના મહત્વને સમજે છે. અમારા માટે, આ બધું સાથે મળીને કરુણા અને તમારી સલામતી પ્રત્યેની પ્રતિબદ્ધતા સાથે અસાધારણ ગ્રાહક સેવા પ્રદાન કરવા માટે કામ કરે છે.",
+        p3: "અમારો પરિવાર તમને Tri-Valley Auto Body નો તફાવત અનુભવવા આમંત્રણ આપવા માંગે છે."
       },
       team: {
         eyebrow: "ટીમને મળો",
@@ -799,8 +804,9 @@
       about: {
         eyebrow: "हमारी कहानी",
         heading: "तीन पीढ़ियां, एक मानक।",
-        p1: "Tri-Valley Auto Body ने 1980 में 1st Street पर अपने दरवाज़े खोले। साढ़े चार दशक बाद, हम अभी भी उसी सड़क पर हैं, अभी भी पारिवारिक रूप से संचालित हैं, और अभी भी हर मरम्मत के पीछे आजीवन वर्कमैनशिप वारंटी के साथ खड़े हैं।",
-        p2: "जो बदला है वह है उपकरण: कंप्यूटरीकृत फ्रेम मापन, ADAS कैलिब्रेशन, और एक डाउन-ड्राफ्ट पेंट बूथ जो हमें किसी भी फैक्ट्री फिनिश से मिलान करने देता है। जो नहीं बदला है वह यह है कि जब आप कॉल करते हैं तो फ़ोन कौन उठाता है।"
+        p1: "Tri-Valley Auto Body एक पारिवारिक स्वामित्व वाली और संचालित ऑटो बॉडी रिपेयर शॉप है, जिसे पूरे Tri-Valley क्षेत्र को ऑटो बॉडी रिपेयर सेवाएं प्रदान करने का दशकों का अनुभव है। 1980 में हमारी स्थापना के बाद से, मालिक Fernando Romero Sr. ने पारिवारिक दृष्टिकोण के साथ सेवाएं प्रदान की हैं, ग्राहकों को अनुकूलित कोलिज़न रिपेयर प्रक्रियाएं प्रदान करते हुए जो अपेक्षाओं से बढ़कर हैं।",
+        p2: "पहले संपर्क बिंदु से ही, हमारा परिवार आपके साथ परिवार जैसा व्यवहार करेगा। अब अपनी तीसरी पीढ़ी में, Tri-Valley Auto Body समुदाय, परिवार और गुणवत्तापूर्ण कोलिज़न रिपेयर सेवाओं के महत्व को समझता है। हमारे लिए, ये सभी साथ मिलकर करुणा और आपकी सुरक्षा के प्रति प्रतिबद्धता के साथ असाधारण ग्राहक सेवा प्रदान करने के लिए काम करते हैं।",
+        p3: "हमारा परिवार आपको Tri-Valley Auto Body का अंतर अनुभव करने के लिए आमंत्रित करना चाहता है।"
       },
       team: {
         eyebrow: "टीम से मिलें",
@@ -941,8 +947,9 @@
       about: {
         eyebrow: "La Nostra Storia",
         heading: "Tre Generazioni, Uno Standard.",
-        p1: "Tri-Valley Auto Body ha aperto i battenti su 1st Street nel 1980. Quattro decenni e mezzo dopo, siamo ancora sulla stessa strada, ancora a conduzione familiare, e continuiamo a garantire ogni riparazione con una garanzia a vita sulla lavorazione.",
-        p2: "Ciò che è cambiato è l'attrezzatura: misurazione computerizzata del telaio, calibrazione ADAS e una cabina di verniciatura a flusso discendente che ci permette di abbinare qualsiasi finitura di fabbrica. Ciò che non è cambiato è chi risponde al telefono quando chiami."
+        p1: "Tri-Valley Auto Body è un'officina di carrozzeria a conduzione familiare, con decenni di esperienza nel fornire servizi di riparazione carrozzeria a tutta l'area di Tri-Valley. Dalla nostra fondazione nel 1980, il titolare Fernando Romero Sr. ha offerto servizi con un approccio familiare, fornendo ai clienti processi di riparazione collisioni personalizzati che superano le aspettative.",
+        p2: "Fin dal primo contatto, la nostra famiglia vi tratterà come parte della famiglia. Ora alla terza generazione, Tri-Valley Auto Body comprende l'importanza della comunità, della famiglia e di servizi di riparazione collisioni di qualità. Per noi, tutto questo va di pari passo per offrire un servizio clienti eccezionale con empatia e un impegno per la vostra sicurezza.",
+        p3: "La nostra famiglia desidera invitarvi a provare la differenza di Tri-Valley Auto Body."
       },
       team: {
         eyebrow: "Conosci Il Team",
@@ -1083,8 +1090,9 @@
       about: {
         eyebrow: "우리의 이야기",
         heading: "3대에 걸친 하나의 기준.",
-        p1: "Tri-Valley Auto Body는 1980년 1st Street에서 문을 열었습니다. 45년이 지난 지금도 같은 거리에서, 여전히 가족 경영으로, 모든 수리에 평생 작업 보증을 제공하고 있습니다.",
-        p2: "달라진 것은 장비입니다: 컴퓨터화된 프레임 측정, ADAS 교정, 그리고 어떤 공장 마감이든 맞출 수 있는 다운드래프트 도장 부스. 달라지지 않은 것은 전화를 받는 사람입니다."
+        p1: "Tri-Valley Auto Body는 Tri-Valley 전 지역에 자동차 차체 수리 서비스를 제공해 온 수십 년 경력의 가족 소유 및 운영 정비소입니다. 1980년 창업 이래, 대표 Fernando Romero Sr.는 가족적인 방식으로 서비스를 제공하며 고객에게 기대를 뛰어넘는 맞춤형 충돌 수리 과정을 선사해 왔습니다.",
+        p2: "첫 연락의 순간부터 저희 가족은 고객님을 가족처럼 대합니다. 이제 3대에 이른 Tri-Valley Auto Body는 지역사회, 가족, 그리고 양질의 충돌 수리 서비스가 지닌 중요성을 잘 알고 있습니다. 저희에게 이 모든 것은 하나로 어우러져 배려와 고객님의 안전에 대한 확고한 책임감을 바탕으로 한 탁월한 고객 서비스를 제공합니다.",
+        p3: "저희 가족은 고객님을 Tri-Valley Auto Body만의 차이를 직접 경험해 보시도록 초대합니다."
       },
       team: {
         eyebrow: "팀 소개",
@@ -1225,8 +1233,9 @@
       about: {
         eyebrow: "Nasza Historia",
         heading: "Trzy Pokolenia, Jeden Standard.",
-        p1: "Tri-Valley Auto Body otworzyło swoje drzwi przy 1st Street w 1980 roku. Cztery i pół dekady później nadal działamy przy tej samej ulicy, nadal jako firma rodzinna, i nadal gwarantujemy każdą naprawę dożywotnią gwarancją na jakość wykonania.",
-        p2: "To, co się zmieniło, to sprzęt: komputerowy pomiar ramy, kalibracja ADAS oraz kabina lakiernicza z nawiewem dolnym, która pozwala nam dopasować dowolne wykończenie fabryczne. To, co się nie zmieniło, to osoba, która odbiera telefon, gdy dzwonisz."
+        p1: "Tri-Valley Auto Body to rodzinny warsztat blacharski, posiadający dziesięciolecia doświadczenia w świadczeniu usług naprawy nadwozi dla całego obszaru Tri-Valley. Od momentu założenia firmy w 1980 roku właściciel Fernando Romero Sr. oferuje usługi w rodzinnym duchu, zapewniając klientom spersonalizowane procesy naprawy powypadkowej, które przewyższają oczekiwania.",
+        p2: "Od pierwszego kontaktu nasza rodzina będzie traktować Cię jak członka rodziny. Obecnie w trzecim pokoleniu, Tri-Valley Auto Body rozumie znaczenie społeczności, rodziny oraz wysokiej jakości usług naprawy powypadkowej. Dla nas wszystko to idzie w parze, aby zapewnić wyjątkową obsługę klienta z empatią i troską o Twoje bezpieczeństwo.",
+        p3: "Nasza rodzina pragnie zaprosić Cię do doświadczenia różnicy, jaką oferuje Tri-Valley Auto Body."
       },
       team: {
         eyebrow: "Poznaj Zespół",
@@ -1367,8 +1376,9 @@
       about: {
         eyebrow: "Nossa História",
         heading: "Três Gerações, Um Padrão.",
-        p1: "A Tri-Valley Auto Body abriu suas portas na 1st Street em 1980. Quatro décadas e meia depois, ainda estamos na mesma rua, ainda somos uma empresa familiar e ainda respaldamos cada reparo com uma garantia vitalícia de mão de obra.",
-        p2: "O que mudou foi o equipamento: medição computadorizada de chassi, calibração ADAS e uma cabine de pintura de fluxo descendente que nos permite igualar qualquer acabamento de fábrica. O que não mudou é quem atende o telefone quando você liga."
+        p1: "A Tri-Valley Auto Body é uma oficina de funilaria familiar, com décadas de experiência prestando serviços de reparo de carroceria para toda a região de Tri-Valley. Desde a nossa fundação em 1980, o proprietário Fernando Romero Sr. tem oferecido serviços com uma abordagem familiar, proporcionando aos clientes processos de reparo de colisão personalizados que superam as expectativas.",
+        p2: "Desde o primeiro contato, nossa família vai tratá-lo como família. Agora em sua terceira geração, a Tri-Valley Auto Body entende a importância da comunidade, da família e de serviços de reparo de colisão de qualidade. Para nós, tudo isso caminha junto para oferecer um atendimento ao cliente excepcional, com compaixão e compromisso com a sua segurança.",
+        p3: "Nossa família gostaria de convidá-lo a experimentar a diferença Tri-Valley Auto Body."
       },
       team: {
         eyebrow: "Conheça A Equipe",
