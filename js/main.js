@@ -190,12 +190,76 @@
     window.addEventListener("scroll", update, { passive: true });
   }
 
+  /* ---------- Process steps: sequential auto-highlight ----------
+     While the "Our Process" section is in view, steps 01-05 light up
+     one at a time in order (number brightens, underline lengthens to
+     match the width of that step's own number), looping continuously.
+     Pauses when scrolled out of view. Uses a plain scroll-position
+     check rather than IntersectionObserver — same pattern as
+     initNavScrollState. */
+  function initProcessHighlight() {
+    var steps = document.querySelectorAll(".process-grid .p-step");
+    var section = document.getElementById("process");
+    if (!steps.length || !section) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    var DURATION = 2000;
+    var index = 0;
+    var timer = null;
+
+    function measureRuleWidths() {
+      steps.forEach(function (step) {
+        var num = step.querySelector(".num");
+        if (num) step.style.setProperty("--rule-w", num.getBoundingClientRect().width + "px");
+      });
+    }
+    function highlight(i) {
+      steps.forEach(function (step, idx) {
+        step.classList.toggle("active", idx === i);
+      });
+    }
+    function tick() {
+      highlight(index);
+      index = (index + 1) % steps.length;
+      timer = setTimeout(tick, DURATION);
+    }
+    function start() {
+      if (timer) return;
+      tick();
+    }
+    function stop() {
+      clearTimeout(timer);
+      timer = null;
+      steps.forEach(function (step) {
+        step.classList.remove("active");
+      });
+    }
+    function isInView() {
+      var rect = section.getBoundingClientRect();
+      var visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+      return visibleHeight > rect.height * 0.4;
+    }
+    function checkVisibility() {
+      if (isInView()) start();
+      else stop();
+    }
+
+    measureRuleWidths();
+    checkVisibility();
+    window.addEventListener("scroll", checkVisibility, { passive: true });
+    window.addEventListener("resize", function () {
+      measureRuleWidths();
+      checkVisibility();
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initMobileNav();
     initSliders();
     initLangToggle();
     initScrollSpy();
     initNavScrollState();
+    initProcessHighlight();
   });
 
   window.TVAB = window.TVAB || {};
