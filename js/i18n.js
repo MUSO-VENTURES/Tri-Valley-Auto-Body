@@ -28,7 +28,7 @@
 
   var T = {
     EN: {
-      topbar: { hours: "Mon–Fri · 8am–5pm" },
+      topbar: { hours: "Mon–Fri · 8am–5pm", language: "Language" },
       nav: { services: "Services", gallery: "Gallery", about: "About", reviews: "Reviews", contact: "Contact", callNow: "Call Now" },
       cta: {
         freeEstimate: "Free Estimate",
@@ -171,7 +171,7 @@
     },
 
     ES: {
-      topbar: { hours: "Lun–Vie · 8am–5pm" },
+      topbar: { hours: "Lun–Vie · 8am–5pm", language: "Idioma" },
       nav: { services: "Servicios", gallery: "Galería", about: "Nosotros", reviews: "Reseñas", contact: "Contacto", callNow: "Llamar" },
       cta: {
         freeEstimate: "Presupuesto Gratis",
@@ -314,7 +314,7 @@
     },
 
     AR: {
-      topbar: { hours: "الإثنين–الجمعة · 8ص–5م" },
+      topbar: { hours: "الإثنين–الجمعة · 8ص–5م", language: "اللغة" },
       nav: { services: "الخدمات", gallery: "المعرض", about: "من نحن", reviews: "التقييمات", contact: "اتصل بنا", callNow: "اتصل الآن" },
       cta: {
         freeEstimate: "تقدير مجاني",
@@ -457,7 +457,7 @@
     },
 
     ZH: {
-      topbar: { hours: "周一至周五 · 上午8点–下午5点" },
+      topbar: { hours: "周一至周五 · 上午8点–下午5点", language: "语言" },
       nav: { services: "服务项目", gallery: "作品展示", about: "关于我们", reviews: "客户评价", contact: "联系我们", callNow: "立即致电" },
       cta: {
         freeEstimate: "免费估价",
@@ -600,7 +600,7 @@
     },
 
     GU: {
-      topbar: { hours: "સોમ–શુક્ર · સવારે 8–સાંજે 5" },
+      topbar: { hours: "સોમ–શુક્ર · સવારે 8–સાંજે 5", language: "ભાષા" },
       nav: { services: "સેવાઓ", gallery: "ગેલેરી", about: "અમારા વિશે", reviews: "સમીક્ષાઓ", contact: "સંપર્ક", callNow: "હમણાં કૉલ કરો" },
       cta: {
         freeEstimate: "મફત અંદાજ",
@@ -743,7 +743,7 @@
     },
 
     HI: {
-      topbar: { hours: "सोम–शुक्र · सुबह 8–शाम 5" },
+      topbar: { hours: "सोम–शुक्र · सुबह 8–शाम 5", language: "भाषा" },
       nav: { services: "सेवाएं", gallery: "गैलरी", about: "हमारे बारे में", reviews: "समीक्षाएं", contact: "संपर्क करें", callNow: "अभी कॉल करें" },
       cta: {
         freeEstimate: "मुफ़्त अनुमान",
@@ -886,7 +886,7 @@
     },
 
     IT: {
-      topbar: { hours: "Lun–Ven · 8:00–17:00" },
+      topbar: { hours: "Lun–Ven · 8:00–17:00", language: "Lingua" },
       nav: { services: "Servizi", gallery: "Galleria", about: "Chi Siamo", reviews: "Recensioni", contact: "Contatti", callNow: "Chiama Ora" },
       cta: {
         freeEstimate: "Preventivo Gratuito",
@@ -1029,7 +1029,7 @@
     },
 
     KO: {
-      topbar: { hours: "월–금 · 오전 8시–오후 5시" },
+      topbar: { hours: "월–금 · 오전 8시–오후 5시", language: "언어" },
       nav: { services: "서비스", gallery: "갤러리", about: "회사 소개", reviews: "고객 후기", contact: "문의하기", callNow: "지금 전화하기" },
       cta: {
         freeEstimate: "무료 견적",
@@ -1172,7 +1172,7 @@
     },
 
     PL: {
-      topbar: { hours: "Pon–Pt · 8:00–17:00" },
+      topbar: { hours: "Pon–Pt · 8:00–17:00", language: "Język" },
       nav: { services: "Usługi", gallery: "Galeria", about: "O Nas", reviews: "Opinie", contact: "Kontakt", callNow: "Zadzwoń Teraz" },
       cta: {
         freeEstimate: "Bezpłatna Wycena",
@@ -1315,7 +1315,7 @@
     },
 
     PT: {
-      topbar: { hours: "Seg–Sex · 8h–17h" },
+      topbar: { hours: "Seg–Sex · 8h–17h", language: "Idioma" },
       nav: { services: "Serviços", gallery: "Galeria", about: "Sobre Nós", reviews: "Avaliações", contact: "Contato", callNow: "Ligue Agora" },
       cta: {
         freeEstimate: "Orçamento Gratuito",

@@ -190,54 +190,32 @@
     window.addEventListener("scroll", update, { passive: true });
   }
 
-  /* ---------- Hero background lock ----------
-     Pins the hero photo to the top of the viewport (position:fixed,
-     sized to the hero's own height) for exactly as long as the hero
-     section is scrolling past, so the image holds still on screen
-     while the headline scrolls up over it. Unpins once the section has
-     fully scrolled by, so it never covers later content.
+  /* ---------- Hero sticky background sizing ----------
+     .hero-photo-bg locks in place via CSS position:sticky while its
+     wrapper scrolls past, then releases automatically once the wrapper
+     is gone — no scroll-tracking JS needed for that part. But sticky
+     only has room to "stick" if its containing block is taller than
+     the sticky element itself (zero height difference = zero stick
+     range), so the wrapper is sized slightly taller (1.25x) than the
+     natural photo-band height here — just enough lock/reveal room for
+     the headline to scroll up and off before the next section takes
+     over, without leaving a dead empty gap in between. */
+  function initHeroStickyBg() {
+    var bg = document.querySelector(".hero-photo-bg");
+    var wrap = document.querySelector(".hero-photo-wrap");
+    var inner = wrap && wrap.querySelector(".inner");
+    if (!bg || !wrap || !inner) return;
+    var RATIO = 420 / 1376; // native photo aspect ratio (height / width)
 
-     Deliberately NOT using CSS background-attachment:fixed — that
-     sizes background-size:cover against the viewport instead of the
-     element, which crops the sides of the photo unpredictably
-     depending on window shape. Sizing the locked box to the hero's own
-     measured height keeps the aspect ratio (and crop) identical to the
-     unlocked state. */
-  function initHeroParallax() {
-    var bg = document.querySelector("[data-parallax]");
-    if (!bg) return;
-    var section = bg.closest(".hero-photo");
-    if (!section) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    var ticking = false;
-    var heroHeight = 0;
-
-    function measure() {
-      heroHeight = section.offsetHeight;
+    function sync() {
+      var bandHeight = wrap.offsetWidth * RATIO;
+      wrap.style.height = bandHeight * 1.25 + "px";
+      bg.style.height = bandHeight + "px";
+      inner.style.height = bandHeight + "px";
     }
-
-    function update() {
-      var rect = section.getBoundingClientRect();
-      var inRange = rect.top <= 0 && rect.bottom > 0;
-      bg.classList.toggle("is-locked", inRange);
-      bg.style.height = inRange ? heroHeight + "px" : "";
-      ticking = false;
-    }
-    function onScroll() {
-      if (!ticking) {
-        window.requestAnimationFrame(update);
-        ticking = true;
-      }
-    }
-
-    measure();
-    update();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", function () {
-      measure();
-      update();
-    });
+    sync();
+    window.addEventListener("resize", sync);
+    window.addEventListener("load", sync);
   }
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -246,7 +224,7 @@
     initLangToggle();
     initScrollSpy();
     initNavScrollState();
-    initHeroParallax();
+    initHeroStickyBg();
   });
 
   window.TVAB = window.TVAB || {};
