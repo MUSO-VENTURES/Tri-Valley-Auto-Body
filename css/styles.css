@@ -106,7 +106,7 @@ nav.links a[aria-current="page"]{color:var(--text-hi);border-color:var(--accent)
 }
 
 /* HERO PHOTO BAND (home) */
-.hero-photo{position:relative;color:var(--text-hi);aspect-ratio:1376/470;background-size:cover;background-position:center;background-attachment:scroll;overflow:hidden;}
+.hero-photo{position:relative;color:var(--text-hi);aspect-ratio:1376/420;background-size:cover;background-position:center;background-attachment:scroll;overflow:hidden;}
 @media (hover:hover) and (pointer:fine){
   .hero-photo{background-attachment:fixed;}
 }
