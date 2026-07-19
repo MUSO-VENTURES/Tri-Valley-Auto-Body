@@ -130,7 +130,11 @@ nav.links a[aria-current="page"]{color:var(--text-hi);border-color:var(--accent)
 }
 
 /* HERO PHOTO BAND (home) */
-.hero-photo{position:relative;color:var(--text-hi);aspect-ratio:1376/420;background-size:cover;background-position:center;background-attachment:scroll;overflow:hidden;}
+.hero-photo{position:relative;color:var(--text-hi);aspect-ratio:1376/420;overflow:hidden;}
+.hero-photo-bg{
+  position:absolute;left:0;right:0;top:-9%;height:118%;z-index:0;
+  background-size:cover;background-position:center;will-change:transform;
+}
 .hero-photo::after{
   content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
   background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.15) 38%,rgba(0,0,0,.6) 100%);

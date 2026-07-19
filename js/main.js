@@ -190,12 +190,47 @@
     window.addEventListener("scroll", update, { passive: true });
   }
 
+  /* ---------- Hero parallax ----------
+     Translates a background layer that's deliberately sized taller than
+     its box, instead of using CSS background-attachment:fixed — that
+     approach sizes background-size:cover against the viewport instead
+     of the element, which was cropping the sides of the hero photo
+     unpredictably depending on window shape. This JS version keeps the
+     crop amount fixed and controlled instead. */
+  function initHeroParallax() {
+    var bg = document.querySelector("[data-parallax]");
+    if (!bg) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+
+    var section = bg.closest(".hero-photo");
+    var ticking = false;
+
+    function update() {
+      var rect = section.getBoundingClientRect();
+      var progress = Math.min(Math.max(-rect.top, 0), rect.height);
+      bg.style.transform = "translateY(" + progress * 0.25 + "px)";
+      ticking = false;
+    }
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    }
+
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", update);
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initMobileNav();
     initSliders();
     initLangToggle();
     initScrollSpy();
     initNavScrollState();
+    initHeroParallax();
   });
 
   window.TVAB = window.TVAB || {};
