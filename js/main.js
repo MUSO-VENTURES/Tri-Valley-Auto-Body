@@ -135,11 +135,23 @@
     sections.forEach(function (s) { observer.observe(s.el); });
   }
 
+  /* ---------- Nav shrink/shadow once page has scrolled ---------- */
+  function initNavScrollState() {
+    var nav = document.querySelector("header.main-nav");
+    if (!nav) return;
+    function update() {
+      nav.classList.toggle("scrolled", window.scrollY > 40);
+    }
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initMobileNav();
     initSliders();
     initLangToggle();
     initScrollSpy();
+    initNavScrollState();
   });
 
   window.TVAB = window.TVAB || {};
