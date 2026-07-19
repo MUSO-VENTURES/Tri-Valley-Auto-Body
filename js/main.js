@@ -91,16 +91,69 @@
     render(0);
   }
 
-  /* ---------- Language toggle (display-only placeholder) ---------- */
+  /* ---------- Language toggle (display-only placeholder) ----------
+     EN stays put and active by default. The second slot is a dropdown
+     offering additional languages; picking one swaps it into the active
+     slot. No real translation is wired up — same scope as the old
+     EN/ES toggle, just extended to more options. */
   function initLangToggle() {
-    document.querySelectorAll(".lang-toggle button").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        document
-          .querySelectorAll(".lang-toggle button")
-          .forEach(function (b) {
-            b.classList.remove("active");
-          });
-        btn.classList.add("active");
+    var enBtn = document.querySelector("[data-lang-en]");
+    var dropdown = document.querySelector("[data-lang-dropdown]");
+    if (!enBtn || !dropdown) return;
+    var trigger = dropdown.querySelector("[data-lang-trigger]");
+    var label = dropdown.querySelector("[data-lang-trigger-label]");
+    var options = Array.prototype.slice.call(
+      dropdown.querySelectorAll('[role="option"]')
+    );
+
+    function closeMenu() {
+      dropdown.classList.remove("open");
+      trigger.setAttribute("aria-expanded", "false");
+    }
+    function openMenu() {
+      dropdown.classList.add("open");
+      trigger.setAttribute("aria-expanded", "true");
+    }
+
+    trigger.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (dropdown.classList.contains("open")) closeMenu();
+      else openMenu();
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!dropdown.contains(e.target)) closeMenu();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeMenu();
+    });
+
+    enBtn.addEventListener("click", function () {
+      enBtn.classList.add("active");
+      trigger.classList.remove("active");
+      options.forEach(function (o) {
+        o.setAttribute("aria-selected", "false");
+      });
+      closeMenu();
+    });
+
+    options.forEach(function (opt) {
+      function choose() {
+        options.forEach(function (o) {
+          o.setAttribute("aria-selected", "false");
+        });
+        opt.setAttribute("aria-selected", "true");
+        label.textContent = opt.dataset.short || opt.textContent;
+        trigger.classList.add("active");
+        enBtn.classList.remove("active");
+        closeMenu();
+      }
+      opt.addEventListener("click", choose);
+      opt.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          choose();
+        }
       });
     });
   }

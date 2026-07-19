@@ -19,8 +19,24 @@
       <a href="#contact">Mon–Fri · 8am–5pm</a>
     </div>
     <div class="lang-toggle">
-      <button class="active">EN</button>
-      <button>ES</button>
+      <button class="active" type="button" data-lang-en>EN</button>
+      <div class="lang-dropdown" data-lang-dropdown>
+        <button class="lang-dropdown-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" data-lang-trigger>
+          <span data-lang-trigger-label>ES</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <ul class="lang-dropdown-menu" role="listbox" aria-label="Select language" data-lang-menu>
+          <li role="option" tabindex="0" data-short="ES" aria-selected="true">Spanish</li>
+          <li role="option" tabindex="0" data-short="AR">Arabic</li>
+          <li role="option" tabindex="0" data-short="ZH">Chinese (Simplified)</li>
+          <li role="option" tabindex="0" data-short="GU">Gujarati</li>
+          <li role="option" tabindex="0" data-short="HI">Hindi</li>
+          <li role="option" tabindex="0" data-short="IT">Italian</li>
+          <li role="option" tabindex="0" data-short="KO">Korean</li>
+          <li role="option" tabindex="0" data-short="PL">Polish</li>
+          <li role="option" tabindex="0" data-short="PT">Portuguese (Brazil)</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
