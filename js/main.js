@@ -179,6 +179,21 @@
     sections.forEach(function (s) { observer.observe(s.el); });
   }
 
+  /* ---------- Clear the nav's active-link underline when the logo
+     is clicked, since it jumps back to the hero — a section the nav
+     links don't track, so the underline would otherwise stay stuck
+     on whatever section was active before. ---------- */
+  function initLogoResetsNav() {
+    var logo = document.querySelector('a.logo[href="#top"]');
+    var navLinks = document.querySelectorAll('nav.links a[href^="#"]');
+    if (!logo || !navLinks.length) return;
+    logo.addEventListener("click", function () {
+      navLinks.forEach(function (a) {
+        a.removeAttribute("aria-current");
+      });
+    });
+  }
+
   /* ---------- Nav shrink/shadow once page has scrolled ---------- */
   function initNavScrollState() {
     var nav = document.querySelector("header.main-nav");
@@ -258,13 +273,42 @@
     setInterval(checkVisibility, 1500);
   }
 
+  /* ---------- Hero star rating: sequential animate-in ----------
+     Lights each star red one at a time (last one only half, for a
+     4.5 rating), starting only after the hero's own fade-in stagger
+     has finished so it reads as "text builds in, then the rating
+     lights up" rather than everything happening at once. */
+  function initStarRating() {
+    var wrap = document.querySelector("[data-star-rating]");
+    if (!wrap) return;
+    var stars = wrap.querySelectorAll(".star");
+    if (!stars.length) return;
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      stars.forEach(function (star) {
+        star.classList.add("lit");
+      });
+      return;
+    }
+
+    var START_DELAY = 1600; // after the hero text stagger (meta-row finishes ~1.45s)
+    var STEP = 200;
+    stars.forEach(function (star, i) {
+      setTimeout(function () {
+        star.classList.add("lit");
+      }, START_DELAY + i * STEP);
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initMobileNav();
     initSliders();
     initLangToggle();
     initScrollSpy();
+    initLogoResetsNav();
     initNavScrollState();
     initProcessHighlight();
+    initStarRating();
   });
 
   window.TVAB = window.TVAB || {};

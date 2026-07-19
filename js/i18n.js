@@ -39,7 +39,7 @@
       hero: {
         eyebrow: "Family-Owned Since 1980",
         headline: "Built to<br>Standard.",
-        rating: "★★★★★ 4.5 Google Rating",
+        rating: "4.5 Google Rating",
         bbb: "BBB A+ Accredited",
         icar: "I-CAR Gold Class",
         spanish: "Se Habla Español"
@@ -182,7 +182,7 @@
       hero: {
         eyebrow: "Familia Propietaria Desde 1980",
         headline: "Hecho Con<br>Estándar.",
-        rating: "★★★★★ 4.5 en Google",
+        rating: "4.5 en Google",
         bbb: "Acreditación BBB A+",
         icar: "I-CAR Gold Class",
         spanish: "Hablamos Español"
@@ -325,7 +325,7 @@
       hero: {
         eyebrow: "شركة عائلية منذ عام 1980",
         headline: "الجودة هي<br>المعيار.",
-        rating: "★★★★★ تقييم 4.5 على جوجل",
+        rating: "تقييم 4.5 على جوجل",
         bbb: "معتمد BBB A+",
         icar: "شهادة I-CAR الذهبية",
         spanish: "نتحدث الإسبانية"
@@ -468,7 +468,7 @@
       hero: {
         eyebrow: "家族经营，始于1980年",
         headline: "严格<br>标准打造。",
-        rating: "★★★★★ Google评分4.5",
+        rating: "Google评分4.5",
         bbb: "BBB A+认证",
         icar: "I-CAR金牌认证",
         spanish: "会说西班牙语"
@@ -611,7 +611,7 @@
       hero: {
         eyebrow: "1980થી કૌટુંબિક માલિકીનું",
         headline: "ધોરણ મુજબ<br>બનાવેલું.",
-        rating: "★★★★★ 4.5 Google રેટિંગ",
+        rating: "4.5 Google રેટિંગ",
         bbb: "BBB A+ માન્યતાપ્રાપ્ત",
         icar: "I-CAR ગોલ્ડ ક્લાસ",
         spanish: "અમે સ્પેનિશ બોલીએ છીએ"
@@ -754,7 +754,7 @@
       hero: {
         eyebrow: "1980 से पारिवारिक स्वामित्व",
         headline: "मानक के अनुरूप<br>बनाया गया।",
-        rating: "★★★★★ 4.5 Google रेटिंग",
+        rating: "4.5 Google रेटिंग",
         bbb: "BBB A+ मान्यता प्राप्त",
         icar: "I-CAR गोल्ड क्लास",
         spanish: "हम स्पेनिश बोलते हैं"
@@ -897,7 +897,7 @@
       hero: {
         eyebrow: "A Conduzione Familiare Dal 1980",
         headline: "Costruito Su<br>Standard Elevati.",
-        rating: "★★★★★ Valutazione 4.5 su Google",
+        rating: "Valutazione 4.5 su Google",
         bbb: "Accreditato BBB A+",
         icar: "I-CAR Gold Class",
         spanish: "Se Habla Español"
@@ -1040,7 +1040,7 @@
       hero: {
         eyebrow: "1980년부터 가족 경영",
         headline: "기준에 맞춰<br>제작합니다.",
-        rating: "★★★★★ Google 평점 4.5",
+        rating: "Google 평점 4.5",
         bbb: "BBB A+ 인증",
         icar: "I-CAR 골드 클래스",
         spanish: "스페인어 가능"
@@ -1183,7 +1183,7 @@
       hero: {
         eyebrow: "Rodzinna Firma Od 1980 Roku",
         headline: "Zbudowane<br>Zgodnie Ze Standardem.",
-        rating: "★★★★★ Ocena 4.5 w Google",
+        rating: "Ocena 4.5 w Google",
         bbb: "Akredytacja BBB A+",
         icar: "I-CAR Gold Class",
         spanish: "Mówimy Po Hiszpańsku"
@@ -1326,7 +1326,7 @@
       hero: {
         eyebrow: "Empresa Familiar Desde 1980",
         headline: "Feito Com<br>Padrão de Qualidade.",
-        rating: "★★★★★ Avaliação 4.5 no Google",
+        rating: "Avaliação 4.5 no Google",
         bbb: "Credenciado BBB A+",
         icar: "I-CAR Gold Class",
         spanish: "Falamos Espanhol"
