@@ -16,27 +16,25 @@
     <div class="left">
       <a href="tel:9254438548">925.443.8548</a>
       <a href="#contact">3529 1st Street, Livermore, CA 94551</a>
-      <a href="#contact">Mon–Fri · 8am–5pm</a>
+      <a href="#contact" data-i18n="topbar.hours">Mon–Fri · 8am–5pm</a>
     </div>
-    <div class="lang-toggle">
-      <button class="active" type="button" data-lang-en>EN</button>
-      <div class="lang-dropdown" data-lang-dropdown>
-        <button class="lang-dropdown-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" data-lang-trigger>
-          <span data-lang-trigger-label>ES</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <ul class="lang-dropdown-menu" role="listbox" aria-label="Select language" data-lang-menu>
-          <li role="option" tabindex="0" data-short="ES" aria-selected="true">Spanish</li>
-          <li role="option" tabindex="0" data-short="AR">Arabic</li>
-          <li role="option" tabindex="0" data-short="ZH">Chinese (Simplified)</li>
-          <li role="option" tabindex="0" data-short="GU">Gujarati</li>
-          <li role="option" tabindex="0" data-short="HI">Hindi</li>
-          <li role="option" tabindex="0" data-short="IT">Italian</li>
-          <li role="option" tabindex="0" data-short="KO">Korean</li>
-          <li role="option" tabindex="0" data-short="PL">Polish</li>
-          <li role="option" tabindex="0" data-short="PT">Portuguese (Brazil)</li>
-        </ul>
-      </div>
+    <div class="lang-toggle" data-lang-dropdown>
+      <button class="lang-toggle-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" data-lang-trigger>
+        <span data-lang-trigger-label>EN</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <ul class="lang-dropdown-menu" role="listbox" aria-label="Select language" data-lang-menu>
+        <li role="option" tabindex="0" data-short="EN" aria-selected="true">English</li>
+        <li role="option" tabindex="0" data-short="ES">Español</li>
+        <li role="option" tabindex="0" data-short="AR">العربية</li>
+        <li role="option" tabindex="0" data-short="ZH">中文（简体）</li>
+        <li role="option" tabindex="0" data-short="GU">ગુજરાતી</li>
+        <li role="option" tabindex="0" data-short="HI">हिन्दी</li>
+        <li role="option" tabindex="0" data-short="IT">Italiano</li>
+        <li role="option" tabindex="0" data-short="KO">한국어</li>
+        <li role="option" tabindex="0" data-short="PL">Polski</li>
+        <li role="option" tabindex="0" data-short="PT">Português (Brasil)</li>
+      </ul>
     </div>
   </div>
 </div>
@@ -47,15 +45,15 @@
       <img class="brand-logo" src="images/logo-nav.png" alt="Tri-Valley Auto Body">
     </a>
     <nav class="links">
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#about">About</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
     <div class="nav-cta">
-      <a href="tel:9254438548" class="btn btn-outline-dark btn-sm">Call Now</a>
-      <a href="#estimate" class="btn btn-accent btn-sm">Free Estimate</a>
+      <a href="tel:9254438548" class="btn btn-outline-dark btn-sm" data-i18n="nav.callNow">Call Now</a>
+      <a href="#estimate" class="btn btn-accent btn-sm" data-i18n="cta.freeEstimate">Free Estimate</a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
@@ -67,17 +65,17 @@
 <!-- HERO -->
 <section class="hero-photo grain" id="top" style="background-image:url('images/hero-shop.jpg');">
   <div class="wrap inner">
-    <span class="eyebrow">Family-Owned Since 1980</span>
-    <h1 class="headline">Built to<br>Standard.</h1>
+    <span class="eyebrow" data-i18n="hero.eyebrow">Family-Owned Since 1980</span>
+    <h1 class="headline" data-i18n-html="hero.headline">Built to<br>Standard.</h1>
     <div class="meta-row">
-      <div class="meta-chip"><span class="dot"></span> ★★★★★ 4.5 Google Rating</div>
-      <div class="meta-chip"><span class="dot"></span> BBB A+ Accredited</div>
-      <div class="meta-chip"><span class="dot"></span> I-CAR Gold Class</div>
-      <div class="meta-chip"><span class="dot"></span> Se Habla Español</div>
+      <div class="meta-chip"><span class="dot"></span> <span data-i18n="hero.rating">★★★★★ 4.5 Google Rating</span></div>
+      <div class="meta-chip"><span class="dot"></span> <span data-i18n="hero.bbb">BBB A+ Accredited</span></div>
+      <div class="meta-chip"><span class="dot"></span> <span data-i18n="hero.icar">I-CAR Gold Class</span></div>
+      <div class="meta-chip"><span class="dot"></span> <span data-i18n="hero.spanish">Se Habla Español</span></div>
     </div>
     <div class="ctas">
-      <a href="#estimate" class="btn btn-accent">Free Estimate</a>
-      <a href="tel:9254438548" class="btn btn-outline-dark">Call 925.443.8548 →</a>
+      <a href="#estimate" class="btn btn-accent" data-i18n="cta.freeEstimate">Free Estimate</a>
+      <a href="tel:9254438548" class="btn btn-outline-dark" data-i18n="cta.callPhone">Call 925.443.8548 →</a>
     </div>
   </div>
 </section>
@@ -85,14 +83,14 @@
 <!-- RECENT WORK MOSAIC -->
 <section style="padding-top:70px;padding-bottom:96px;">
   <div class="wrap">
-    <span class="eyebrow">Recent Work</span>
-    <h2 style="font-size:34px;">From The Shop Floor</h2>
+    <span class="eyebrow" data-i18n="recentWork.eyebrow">Recent Work</span>
+    <h2 style="font-size:34px;" data-i18n="recentWork.heading">From The Shop Floor</h2>
     <div class="hero-gallery" style="margin-top:32px;">
-      <div class="gtile big tex1"><span class="cap">Frame &amp; teardown bay</span></div>
-      <div class="gtile tex2"><span class="cap">Paint booth</span></div>
-      <div class="gtile tex3"><span class="cap">Panel fit-up</span></div>
-      <div class="gtile tex4"><span class="cap">Lift bay</span></div>
-      <a href="#gallery" class="gtile cta"><h4>View Full<br>Gallery</h4><span class="arrow">→</span></a>
+      <div class="gtile big tex1"><span class="cap" data-i18n="recentWork.frameBay">Frame &amp; teardown bay</span></div>
+      <div class="gtile tex2"><span class="cap" data-i18n="recentWork.paintBooth">Paint booth</span></div>
+      <div class="gtile tex3"><span class="cap" data-i18n="recentWork.panelFitup">Panel fit-up</span></div>
+      <div class="gtile tex4"><span class="cap" data-i18n="recentWork.liftBay">Lift bay</span></div>
+      <a href="#gallery" class="gtile cta"><h4 data-i18n-html="recentWork.viewGallery">View Full<br>Gallery</h4><span class="arrow">→</span></a>
     </div>
   </div>
 </section>
@@ -101,40 +99,40 @@
 <section id="services" style="background:var(--white);">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">What We Do</span>
-      <h2>Every Repair, Done Right</h2>
-      <p>From a scuffed bumper to a full frame straighten, our I-CAR Gold Class techs handle it in-house.</p>
+      <span class="eyebrow" data-i18n="services.eyebrow">What We Do</span>
+      <h2 data-i18n="services.heading">Every Repair, Done Right</h2>
+      <p data-i18n="services.intro">From a scuffed bumper to a full frame straighten, our I-CAR Gold Class techs handle it in-house.</p>
     </div>
     <div class="services-grid">
       <div class="service-card">
-        <h3>Collision Repair</h3>
-        <p>Full structural and cosmetic repair for any size accident. Unibody and frame damage, panel replacement, and OEM-spec reassembly — backed by a lifetime workmanship warranty.</p>
-        <a href="#estimate">Get an estimate →</a>
+        <h3 data-i18n="services.collision.title">Collision Repair</h3>
+        <p data-i18n="services.collision.desc">Full structural and cosmetic repair for any size accident. Unibody and frame damage, panel replacement, and OEM-spec reassembly — backed by a lifetime workmanship warranty.</p>
+        <a href="#estimate" data-i18n="cta.getEstimate">Get an estimate →</a>
       </div>
       <div class="service-card">
-        <h3>Auto Painting</h3>
-        <p>Computer color-matched paint applied in our down-draft booth. Blend, clear, and cure to a factory finish — on a single panel or a full respray.</p>
-        <a href="#estimate">Get an estimate →</a>
+        <h3 data-i18n="services.painting.title">Auto Painting</h3>
+        <p data-i18n="services.painting.desc">Computer color-matched paint applied in our down-draft booth. Blend, clear, and cure to a factory finish — on a single panel or a full respray.</p>
+        <a href="#estimate" data-i18n="cta.getEstimate">Get an estimate →</a>
       </div>
       <div class="service-card">
-        <h3>Paintless Dent Repair</h3>
-        <p>Hail damage and minor door dings removed without cutting or repainting, preserving your factory finish and resale value.</p>
-        <a href="#estimate">Get an estimate →</a>
+        <h3 data-i18n="services.pdr.title">Paintless Dent Repair</h3>
+        <p data-i18n="services.pdr.desc">Hail damage and minor door dings removed without cutting or repainting, preserving your factory finish and resale value.</p>
+        <a href="#estimate" data-i18n="cta.getEstimate">Get an estimate →</a>
       </div>
       <div class="service-card">
-        <h3>Frame Straightening</h3>
-        <p>Computerized frame measuring and hydraulic pulling to restore your vehicle's structure to OEM tolerances.</p>
-        <a href="#estimate">Get an estimate →</a>
+        <h3 data-i18n="services.frame.title">Frame Straightening</h3>
+        <p data-i18n="services.frame.desc">Computerized frame measuring and hydraulic pulling to restore your vehicle's structure to OEM tolerances.</p>
+        <a href="#estimate" data-i18n="cta.getEstimate">Get an estimate →</a>
       </div>
       <div class="service-card">
-        <h3>Auto Glass</h3>
-        <p>Windshield, back glass, and window replacement with OEM or OEM-equivalent glass, including ADAS camera recalibration.</p>
-        <a href="#estimate">Get an estimate →</a>
+        <h3 data-i18n="services.glass.title">Auto Glass</h3>
+        <p data-i18n="services.glass.desc">Windshield, back glass, and window replacement with OEM or OEM-equivalent glass, including ADAS camera recalibration.</p>
+        <a href="#estimate" data-i18n="cta.getEstimate">Get an estimate →</a>
       </div>
       <div class="service-card">
-        <h3>Insurance Claims Handling</h3>
-        <p>Direct Repair Program partner with most major carriers — we can bill them directly and manage the paperwork.</p>
-        <a href="#insurance">Look up your carrier →</a>
+        <h3 data-i18n="services.insurance.title">Insurance Claims Handling</h3>
+        <p data-i18n="services.insurance.desc">Direct Repair Program partner with most major carriers — we can bill them directly and manage the paperwork.</p>
+        <a href="#insurance" data-i18n="cta.lookupCarrier">Look up your carrier →</a>
       </div>
     </div>
   </div>
@@ -144,27 +142,27 @@
 <section class="dark-sec grain" id="gallery">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Signature Repairs</span>
-      <h2>See The Difference</h2>
-      <p>Drag the slider — this is the standard every car leaves our shop meeting.</p>
+      <span class="eyebrow" data-i18n="gallery.eyebrow">Signature Repairs</span>
+      <h2 data-i18n="gallery.heading">See The Difference</h2>
+      <p data-i18n="gallery.intro">Drag the slider — this is the standard every car leaves our shop meeting.</p>
     </div>
     <div class="slider-frame">
-      <div class="panel panel-before" style="background-image:url('images/gallery/signature-before.jpg');"><span class="panel-tag">Before</span></div>
-      <div class="panel panel-after" style="background-image:url('images/gallery/signature-after.jpg');"><span class="panel-tag">After</span></div>
+      <div class="panel panel-before" style="background-image:url('images/gallery/signature-before.jpg');"><span class="panel-tag" data-i18n="gallery.before">Before</span></div>
+      <div class="panel panel-after" style="background-image:url('images/gallery/signature-after.jpg');"><span class="panel-tag" data-i18n="gallery.after">After</span></div>
       <div class="slider-handle"></div>
       <input type="range" class="slider-input" min="0" max="100" value="50" aria-label="Drag to compare before and after">
     </div>
 
     <div style="margin-top:64px;">
-      <span class="eyebrow">Full Gallery</span>
-      <h3 style="font-family:var(--display);font-size:26px;font-weight:400;text-transform:uppercase;margin-bottom:24px;">Browse Real Jobs</h3>
+      <span class="eyebrow" data-i18n="gallery.fullEyebrow">Full Gallery</span>
+      <h3 style="font-family:var(--display);font-size:26px;font-weight:400;text-transform:uppercase;margin-bottom:24px;" data-i18n="gallery.browseHeading">Browse Real Jobs</h3>
       <div class="gallery-filters" id="gallery-filters" role="tablist" aria-label="Filter by service" style="margin-bottom:28px;"></div>
       <div class="gallery-grid" id="gallery-grid">
-        <p class="gallery-empty" style="color:var(--text-lo);">Loading recent work…</p>
+        <p class="gallery-empty" style="color:var(--text-lo);" data-i18n="gallery.loading">Loading recent work…</p>
       </div>
       <div class="setup-placeholder" style="margin-top:32px;">
-        <span class="tag">How to add real photos</span>
-        <p>This gallery reads from <code>data/gallery.json</code>. Drop before/after photos in <code>images/gallery/</code>, then set each job's <code>"before"</code> / <code>"after"</code> fields to the file path. No code changes needed.</p>
+        <span class="tag" data-i18n="gallery.setupTag">How to add real photos</span>
+        <p data-i18n-html="gallery.setupText">This gallery reads from <code>data/gallery.json</code>. Drop before/after photos in <code>images/gallery/</code>, then set each job's <code>"before"</code> / <code>"after"</code> fields to the file path. No code changes needed.</p>
       </div>
     </div>
   </div>
@@ -174,8 +172,8 @@
   <button class="lightbox-close" aria-label="Close">×</button>
   <div class="lightbox-inner">
     <div class="slider-frame">
-      <div class="panel panel-before"><span class="panel-tag">Before</span></div>
-      <div class="panel panel-after"><span class="panel-tag">After</span></div>
+      <div class="panel panel-before"><span class="panel-tag" data-i18n="gallery.before">Before</span></div>
+      <div class="panel panel-after"><span class="panel-tag" data-i18n="gallery.after">After</span></div>
       <div class="slider-handle"></div>
       <input type="range" class="slider-input" min="0" max="100" value="50" aria-label="Drag to compare before and after">
     </div>
@@ -187,16 +185,16 @@
 <section class="dark-sec grain" id="process">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Our Process</span>
-      <h2>From Drop-Off To Done</h2>
-      <p>Every repair follows the same five steps — no surprises, no shortcuts.</p>
+      <span class="eyebrow" data-i18n="process.eyebrow">Our Process</span>
+      <h2 data-i18n="process.heading">From Drop-Off To Done</h2>
+      <p data-i18n="process.intro">Every repair follows the same five steps — no surprises, no shortcuts.</p>
     </div>
     <div class="process-grid">
-      <div class="p-step"><div class="num">01</div><div class="rule"></div><h4>Estimate</h4><p>Free in-person or photo estimate, usually same-day.</p></div>
-      <div class="p-step"><div class="num">02</div><div class="rule"></div><h4>Insurance</h4><p>We file the claim and coordinate directly with your carrier.</p></div>
-      <div class="p-step"><div class="num">03</div><div class="rule"></div><h4>Teardown</h4><p>Full disassembly to catch hidden damage before repair begins.</p></div>
-      <div class="p-step"><div class="num">04</div><div class="rule"></div><h4>Repair &amp; Paint</h4><p>Structural repair, panel work, and color-matched paint.</p></div>
-      <div class="p-step"><div class="num">05</div><div class="rule"></div><h4>Quality Check</h4><p>Reassembly, wash, and a final inspection before pickup.</p></div>
+      <div class="p-step"><div class="num">01</div><div class="rule"></div><h4 data-i18n="process.step1.title">Estimate</h4><p data-i18n="process.step1.desc">Free in-person or photo estimate, usually same-day.</p></div>
+      <div class="p-step"><div class="num">02</div><div class="rule"></div><h4 data-i18n="process.step2.title">Insurance</h4><p data-i18n="process.step2.desc">We file the claim and coordinate directly with your carrier.</p></div>
+      <div class="p-step"><div class="num">03</div><div class="rule"></div><h4 data-i18n="process.step3.title">Teardown</h4><p data-i18n="process.step3.desc">Full disassembly to catch hidden damage before repair begins.</p></div>
+      <div class="p-step"><div class="num">04</div><div class="rule"></div><h4 data-i18n="process.step4.title">Repair &amp; Paint</h4><p data-i18n="process.step4.desc">Structural repair, panel work, and color-matched paint.</p></div>
+      <div class="p-step"><div class="num">05</div><div class="rule"></div><h4 data-i18n="process.step5.title">Quality Check</h4><p data-i18n="process.step5.desc">Reassembly, wash, and a final inspection before pickup.</p></div>
     </div>
   </div>
 </section>
@@ -204,38 +202,38 @@
 <!-- ABOUT -->
 <section id="about" style="background:var(--white);">
   <div class="wrap" style="max-width:820px;">
-    <span class="eyebrow">Our Story</span>
-    <h2 style="font-size:32px;margin-bottom:20px;">Three Generations, One Standard.</h2>
-    <p style="font-size:16px;color:var(--body-soft);margin-bottom:16px;">Tri-Valley Auto Body opened its doors on 1st Street in 1980. Four and a half decades later, we're still on the same street, still family-run, and still standing behind every repair with a lifetime workmanship warranty.</p>
-    <p style="font-size:16px;color:var(--body-soft);">What's changed is the equipment: computerized frame measuring, ADAS calibration, and a down-draft paint booth that lets us match any factory finish. What hasn't changed is who answers the phone when you call.</p>
+    <span class="eyebrow" data-i18n="about.eyebrow">Our Story</span>
+    <h2 style="font-size:32px;margin-bottom:20px;" data-i18n="about.heading">Three Generations, One Standard.</h2>
+    <p style="font-size:16px;color:var(--body-soft);margin-bottom:16px;" data-i18n="about.p1">Tri-Valley Auto Body opened its doors on 1st Street in 1980. Four and a half decades later, we're still on the same street, still family-run, and still standing behind every repair with a lifetime workmanship warranty.</p>
+    <p style="font-size:16px;color:var(--body-soft);" data-i18n="about.p2">What's changed is the equipment: computerized frame measuring, ADAS calibration, and a down-draft paint booth that lets us match any factory finish. What hasn't changed is who answers the phone when you call.</p>
   </div>
 </section>
 
 <section class="dark-sec grain">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Meet The Team</span>
-      <h2>Who's Working On Your Car</h2>
-      <p>Every technician here is I-CAR certified and most have been with us for over a decade.</p>
+      <span class="eyebrow" data-i18n="team.eyebrow">Meet The Team</span>
+      <h2 data-i18n="team.heading">Who's Working On Your Car</h2>
+      <p data-i18n="team.intro">Every technician here is I-CAR certified and most have been with us for over a decade.</p>
     </div>
     <div class="team-grid">
-      <div class="team-card"><div class="team-photo"><div class="init">MR</div></div><h4>Manny Romero</h4><div class="role">Owner &amp; Master Technician</div></div>
-      <div class="team-card"><div class="team-photo"><div class="init">CR</div></div><h4>Carlos Romero</h4><div class="role">Shop Manager</div></div>
-      <div class="team-card"><div class="team-photo"><div class="init">DL</div></div><h4>Dana Lopez</h4><div class="role">Estimator</div></div>
-      <div class="team-card"><div class="team-photo"><div class="init">JT</div></div><h4>James Tran</h4><div class="role">Paint Lead</div></div>
+      <div class="team-card"><div class="team-photo"><div class="init">MR</div></div><h4>Manny Romero</h4><div class="role" data-i18n="team.roleOwner">Owner &amp; Master Technician</div></div>
+      <div class="team-card"><div class="team-photo"><div class="init">CR</div></div><h4>Carlos Romero</h4><div class="role" data-i18n="team.roleManager">Shop Manager</div></div>
+      <div class="team-card"><div class="team-photo"><div class="init">DL</div></div><h4>Dana Lopez</h4><div class="role" data-i18n="team.roleEstimator">Estimator</div></div>
+      <div class="team-card"><div class="team-photo"><div class="init">JT</div></div><h4>James Tran</h4><div class="role" data-i18n="team.rolePaintLead">Paint Lead</div></div>
     </div>
   </div>
 </section>
 
 <section style="background:var(--white);">
   <div class="wrap">
-    <span class="eyebrow">Certifications &amp; Standing</span>
+    <span class="eyebrow" data-i18n="certs.eyebrow">Certifications &amp; Standing</span>
     <div class="pill-row">
-      <span class="pill" style="color:var(--body-soft);border-color:var(--line-light);">I-CAR Gold Class</span>
-      <span class="pill" style="color:var(--body-soft);border-color:var(--line-light);">BBB A+ Accredited</span>
-      <span class="pill" style="color:var(--body-soft);border-color:var(--line-light);">ASE Certified Technicians</span>
-      <span class="pill" style="color:var(--body-soft);border-color:var(--line-light);">Licensed &amp; Insured</span>
-      <span class="pill" style="color:var(--body-soft);border-color:var(--line-light);">Lifetime Workmanship Warranty</span>
+      <span class="pill" style="color:var(--body-soft);border-color:var(--line-light);" data-i18n="hero.icar">I-CAR Gold Class</span>
+      <span class="pill" style="color:var(--body-soft);border-color:var(--line-light);" data-i18n="hero.bbb">BBB A+ Accredited</span>
+      <span class="pill" style="color:var(--body-soft);border-color:var(--line-light);" data-i18n="certs.ase">ASE Certified Technicians</span>
+      <span class="pill" style="color:var(--body-soft);border-color:var(--line-light);" data-i18n="certs.licensed">Licensed &amp; Insured</span>
+      <span class="pill" style="color:var(--body-soft);border-color:var(--line-light);" data-i18n="certs.warranty">Lifetime Workmanship Warranty</span>
     </div>
   </div>
 </section>
@@ -244,13 +242,13 @@
 <section id="reviews" class="dark-sec grain">
   <div class="wrap">
     <div class="section-head" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
-      <span class="eyebrow">Reviews</span>
-      <h2>What Our Customers Say</h2>
-      <p>Real feedback from real customers across the Tri-Valley — pulled straight from Google.</p>
+      <span class="eyebrow" data-i18n="reviews.eyebrow">Reviews</span>
+      <h2 data-i18n="reviews.heading">What Our Customers Say</h2>
+      <p data-i18n="reviews.intro">Real feedback from real customers across the Tri-Valley — pulled straight from Google.</p>
     </div>
 
     <div class="testi-wrap">
-      <div class="g-badge"><span class="stars">★★★★★</span> 4.5 average · 300+ Google reviews</div>
+      <div class="g-badge"><span class="stars">★★★★★</span> <span data-i18n="reviews.ratingBadge">4.5 average · 300+ Google reviews</span></div>
       <div class="testi-card" data-carousel-root>
         <p data-slot="text"></p>
         <div class="testi-who" data-slot="who"></div>
@@ -264,8 +262,8 @@
     </div>
 
     <div style="margin-top:48px;text-align:center;">
-      <a href="https://search.google.com/local/writereview?placeid=" target="_blank" rel="noopener" class="btn btn-accent">Write a Google Review →</a>
-      <p style="font-size:12.5px;color:var(--text-lo);margin-top:14px;">Replace the <code>placeid=</code> link with your shop's real Google Place ID.</p>
+      <a href="https://search.google.com/local/writereview?placeid=" target="_blank" rel="noopener" class="btn btn-accent" data-i18n="reviews.writeReview">Write a Google Review →</a>
+      <p style="font-size:12.5px;color:var(--text-lo);margin-top:14px;" data-i18n-html="reviews.placeIdNote">Replace the <code>placeid=</code> link with your shop's real Google Place ID.</p>
     </div>
   </div>
 </section>
@@ -274,9 +272,9 @@
 <section class="dark-sec grain form-sec" id="estimate">
   <div class="wrap" style="max-width:820px;">
     <div class="section-head">
-      <span class="eyebrow">Free Estimate</span>
-      <h2>Tell Us What Happened</h2>
-      <p>Photos help but aren't required. We'll follow up within one business day.</p>
+      <span class="eyebrow" data-i18n="estimate.eyebrow">Free Estimate</span>
+      <h2 data-i18n="estimate.heading">Tell Us What Happened</h2>
+      <p data-i18n="estimate.intro">Photos help but aren't required. We'll follow up within one business day.</p>
     </div>
 
     <div id="estimate-form-note"></div>
@@ -285,43 +283,43 @@
       <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off">
       <div class="form-grid">
         <div>
-          <label for="f-name">Full Name</label>
+          <label for="f-name" data-i18n="estimate.labelName">Full Name</label>
           <input id="f-name" name="name" type="text" placeholder="Jane Diaz" required>
         </div>
         <div>
-          <label for="f-phone">Phone</label>
+          <label for="f-phone" data-i18n="estimate.labelPhone">Phone</label>
           <input id="f-phone" name="phone" type="tel" placeholder="(925) 555-0100" required>
         </div>
         <div>
-          <label for="f-email">Email</label>
+          <label for="f-email" data-i18n="estimate.labelEmail">Email</label>
           <input id="f-email" name="email" type="email" placeholder="jane@example.com" required>
         </div>
         <div>
-          <label for="f-vehicle">Vehicle (Year / Make / Model)</label>
+          <label for="f-vehicle" data-i18n="estimate.labelVehicle">Vehicle (Year / Make / Model)</label>
           <input id="f-vehicle" name="vehicle" type="text" placeholder="2021 Honda CR-V">
         </div>
         <div>
-          <label for="f-insurance">Insurance Carrier (if any)</label>
+          <label for="f-insurance" data-i18n="estimate.labelInsurance">Insurance Carrier (if any)</label>
           <input id="f-insurance" name="insurance" type="text" placeholder="e.g. State Farm">
         </div>
         <div>
-          <label for="f-service">Service Needed</label>
+          <label for="f-service" data-i18n="estimate.labelService">Service Needed</label>
           <select id="f-service" name="service">
-            <option>Collision Repair</option>
-            <option>Auto Painting</option>
-            <option>Paintless Dent Repair</option>
-            <option>Frame Straightening</option>
-            <option>Auto Glass</option>
-            <option>Not sure</option>
+            <option value="Collision Repair" data-i18n="services.collision.title">Collision Repair</option>
+            <option value="Auto Painting" data-i18n="services.painting.title">Auto Painting</option>
+            <option value="Paintless Dent Repair" data-i18n="services.pdr.title">Paintless Dent Repair</option>
+            <option value="Frame Straightening" data-i18n="services.frame.title">Frame Straightening</option>
+            <option value="Auto Glass" data-i18n="services.glass.title">Auto Glass</option>
+            <option value="Not sure" data-i18n="estimate.notSure">Not sure</option>
           </select>
         </div>
         <div class="field-full">
-          <label for="f-details">Describe The Damage</label>
+          <label for="f-details" data-i18n="estimate.labelDetails">Describe The Damage</label>
           <textarea id="f-details" name="details" rows="4" placeholder="What happened, and where's the damage?"></textarea>
         </div>
       </div>
       <div style="margin-top:26px;">
-        <button type="submit" class="btn btn-accent">Request Estimate</button>
+        <button type="submit" class="btn btn-accent" data-i18n="estimate.submit">Request Estimate</button>
       </div>
       <div id="estimate-status" class="form-status" role="status"></div>
     </form>
@@ -332,9 +330,9 @@
 <section id="booking" style="background:var(--white);">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Or Skip Ahead</span>
-      <h2>Book A Drop-Off Time</h2>
-      <p>Pick a day and time that works — we'll confirm by text.</p>
+      <span class="eyebrow" data-i18n="booking.eyebrow">Or Skip Ahead</span>
+      <h2 data-i18n="booking.heading">Book A Drop-Off Time</h2>
+      <p data-i18n="booking.intro">Pick a day and time that works — we'll confirm by text.</p>
     </div>
     <div id="booking-widget"></div>
   </div>
@@ -344,16 +342,16 @@
 <section class="dark-sec grain" id="insurance">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Filing A Claim</span>
-      <h2>Find Your Insurance Carrier</h2>
-      <p>Search or pick your carrier below for their direct claims line — and see if we're an approved direct-repair shop for them.</p>
+      <span class="eyebrow" data-i18n="insurance.eyebrow">Filing A Claim</span>
+      <h2 data-i18n="insurance.heading">Find Your Insurance Carrier</h2>
+      <p data-i18n="insurance.intro">Search or pick your carrier below for their direct claims line — and see if we're an approved direct-repair shop for them.</p>
     </div>
     <div id="insurance-widget" class="ins-widget">
       <div class="ins-search">
-        <input type="text" id="ins-search" placeholder="Search your insurance carrier…" aria-label="Search insurance carrier">
+        <input type="text" id="ins-search" data-i18n-placeholder="insurance.searchPlaceholder" placeholder="Search your insurance carrier…" aria-label="Search insurance carrier">
       </div>
       <div id="ins-grid" class="ins-grid">
-        <p class="ins-empty">Loading carriers…</p>
+        <p class="ins-empty" data-i18n="insurance.loading">Loading carriers…</p>
       </div>
       <div id="ins-result" class="ins-result"></div>
     </div>
@@ -364,35 +362,35 @@
 <section id="contact" style="background:var(--white);">
   <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;">
     <div>
-      <span class="eyebrow">Find Us</span>
+      <span class="eyebrow" data-i18n="contact.eyebrow">Find Us</span>
       <h2 style="font-size:28px;margin-bottom:20px;">3529 1st Street<br>Livermore, CA 94551</h2>
-      <p style="font-size:15px;color:var(--body-soft);margin-bottom:6px;"><strong>Phone:</strong> <a href="tel:9254438548" style="color:var(--accent);">925.443.8548</a></p>
-      <p style="font-size:15px;color:var(--body-soft);margin-bottom:6px;"><strong>Text:</strong> <a href="sms:19254438548" style="color:var(--accent);">925.443.8548</a></p>
-      <p style="font-size:15px;color:var(--body-soft);margin-bottom:22px;"><strong>Hours:</strong> Mon–Fri, 8am–5pm · Closed weekends</p>
-      <a class="btn btn-outline-light" href="https://www.google.com/maps/dir/?api=1&destination=3529+1st+Street+Livermore+CA+94551" target="_blank" rel="noopener">Get Directions →</a>
+      <p style="font-size:15px;color:var(--body-soft);margin-bottom:6px;"><strong data-i18n="contact.phoneLabel">Phone:</strong> <a href="tel:9254438548" style="color:var(--accent);">925.443.8548</a></p>
+      <p style="font-size:15px;color:var(--body-soft);margin-bottom:6px;"><strong data-i18n="contact.textLabel">Text:</strong> <a href="sms:19254438548" style="color:var(--accent);">925.443.8548</a></p>
+      <p style="font-size:15px;color:var(--body-soft);margin-bottom:22px;"><strong data-i18n="contact.hoursLabel">Hours:</strong> <span data-i18n="contact.hours">Mon–Fri, 8am–5pm · Closed weekends</span></p>
+      <a class="btn btn-outline-light" href="https://www.google.com/maps/dir/?api=1&destination=3529+1st+Street+Livermore+CA+94551" target="_blank" rel="noopener" data-i18n="contact.getDirections">Get Directions →</a>
       <div style="margin-top:32px;border:1px solid var(--line-light);aspect-ratio:4/3;">
         <iframe title="Map to Tri-Valley Auto Body" width="100%" height="100%" style="border:0;" loading="lazy"
           src="https://www.google.com/maps?q=3529+1st+Street+Livermore+CA+94551&output=embed"></iframe>
       </div>
     </div>
     <div>
-      <span class="eyebrow">Send A Message</span>
-      <h2 style="font-size:28px;margin-bottom:20px;color:var(--body-ink);">Quick Question?</h2>
+      <span class="eyebrow" data-i18n="contact.sendMessageEyebrow">Send A Message</span>
+      <h2 style="font-size:28px;margin-bottom:20px;color:var(--body-ink);" data-i18n="contact.quickQuestion">Quick Question?</h2>
       <form id="contact-form" novalidate style="background:var(--ink);padding:32px;">
         <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off">
         <div style="margin-bottom:18px;">
-          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--text-lo);margin-bottom:8px;" for="c-name">Name</label>
+          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--text-lo);margin-bottom:8px;" for="c-name" data-i18n="contact.formName">Name</label>
           <input id="c-name" name="name" type="text" required style="width:100%;padding:14px 16px;background:var(--panel-2);border:1px solid var(--line-dark);color:var(--text-hi);font-family:var(--body);font-size:14px;">
         </div>
         <div style="margin-bottom:18px;">
-          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--text-lo);margin-bottom:8px;" for="c-email">Email</label>
+          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--text-lo);margin-bottom:8px;" for="c-email" data-i18n="contact.formEmail">Email</label>
           <input id="c-email" name="email" type="email" required style="width:100%;padding:14px 16px;background:var(--panel-2);border:1px solid var(--line-dark);color:var(--text-hi);font-family:var(--body);font-size:14px;">
         </div>
         <div style="margin-bottom:22px;">
-          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--text-lo);margin-bottom:8px;" for="c-message">Message</label>
+          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--text-lo);margin-bottom:8px;" for="c-message" data-i18n="contact.formMessage">Message</label>
           <textarea id="c-message" name="message" rows="4" required style="width:100%;padding:14px 16px;background:var(--panel-2);border:1px solid var(--line-dark);color:var(--text-hi);font-family:var(--body);font-size:14px;"></textarea>
         </div>
-        <button type="submit" class="btn btn-accent">Send Message</button>
+        <button type="submit" class="btn btn-accent" data-i18n="contact.sendMessage">Send Message</button>
         <div id="contact-status" class="form-status" role="status"></div>
       </form>
     </div>
@@ -402,10 +400,10 @@
 <!-- CTA BANNER -->
 <section class="cta-banner grain">
   <div class="wrap">
-    <h2>Get a free estimate today.</h2>
+    <h2 data-i18n="ctaBanner.heading">Get a free estimate today.</h2>
     <div class="ctas">
-      <a href="#estimate" class="btn btn-outline-dark" style="border-color:rgba(255,255,255,.5);color:#fff;">Request Estimate</a>
-      <a href="tel:9254438548" class="btn btn-outline-dark" style="border-color:rgba(255,255,255,.5);color:#fff;">Call 925.443.8548</a>
+      <a href="#estimate" class="btn btn-outline-dark" style="border-color:rgba(255,255,255,.5);color:#fff;" data-i18n="ctaBanner.requestEstimate">Request Estimate</a>
+      <a href="tel:9254438548" class="btn btn-outline-dark" style="border-color:rgba(255,255,255,.5);color:#fff;" data-i18n="ctaBanner.callPhone">Call 925.443.8548</a>
     </div>
   </div>
 </section>
@@ -415,35 +413,25 @@
     <div class="foot-grid">
       <div>
         <img class="foot-logo-img" src="images/logo-footer.png" alt="Tri-Valley Auto Body">
-        <p style="font-size:13.5px;color:var(--text-lo);max-width:270px;margin-top:16px;">Family-owned and operated collision repair, serving Livermore and the Tri-Valley since 1980.</p>
+        <p style="font-size:13.5px;color:var(--text-lo);max-width:270px;margin-top:16px;" data-i18n="footer.tagline">Family-owned and operated collision repair, serving Livermore and the Tri-Valley since 1980.</p>
         <div class="foot-social"><a href="#" title="Google">G</a><a href="#" title="Yelp">Y</a><a href="#" title="Facebook">f</a><a href="#" title="Instagram">IG</a></div>
       </div>
-      <div><h5>Services</h5><ul><li><a href="#services">Collision Repair</a></li><li><a href="#services">Auto Painting</a></li><li><a href="#services">PDR</a></li><li><a href="#services">Frame Straightening</a></li><li><a href="#services">Auto Glass</a></li></ul></div>
-      <div><h5>Company</h5><ul><li><a href="#about">About Us</a></li><li><a href="#gallery">Our Work</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#insurance">Insurance</a></li></ul></div>
-      <div><h5>Contact</h5><ul><li><a href="#estimate">Free Estimate</a></li><li><a href="#booking">Book Online</a></li><li><a href="#contact">Directions</a></li><li><a href="tel:9254438548">925.443.8548</a></li></ul></div>
+      <div><h5 data-i18n="footer.servicesHeading">Services</h5><ul><li><a href="#services" data-i18n="services.collision.title">Collision Repair</a></li><li><a href="#services" data-i18n="services.painting.title">Auto Painting</a></li><li><a href="#services" data-i18n="footer.pdr">PDR</a></li><li><a href="#services" data-i18n="services.frame.title">Frame Straightening</a></li><li><a href="#services" data-i18n="services.glass.title">Auto Glass</a></li></ul></div>
+      <div><h5 data-i18n="footer.companyHeading">Company</h5><ul><li><a href="#about" data-i18n="footer.aboutUs">About Us</a></li><li><a href="#gallery" data-i18n="footer.ourWork">Our Work</a></li><li><a href="#reviews" data-i18n="nav.reviews">Reviews</a></li><li><a href="#insurance" data-i18n="footer.insurance">Insurance</a></li></ul></div>
+      <div><h5 data-i18n="nav.contact">Contact</h5><ul><li><a href="#estimate" data-i18n="cta.freeEstimate">Free Estimate</a></li><li><a href="#booking" data-i18n="footer.bookOnline">Book Online</a></li><li><a href="#contact" data-i18n="footer.directions">Directions</a></li><li><a href="tel:9254438548">925.443.8548</a></li></ul></div>
     </div>
     <div class="foot-bottom">
       <span>© 2026 Tri-Valley Auto Body · Romero Family, Est. 1980</span>
-      <span>I-CAR Gold Class · Licensed · Insured</span>
+      <span data-i18n="footer.credentials">I-CAR Gold Class · Licensed · Insured</span>
     </div>
   </div>
 </footer>
 
-<button id="chat-trigger" class="chat-trigger" aria-label="Chat with us">💬 <span>Chat with us</span></button>
+<button id="chat-trigger" class="chat-trigger" aria-label="Chat with us"><span aria-hidden="true">💬</span> <span data-i18n="chat.label">Chat with us</span></button>
 
 <script src="js/widgets-config.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 <script src="js/widgets.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    TVAB.initTestimonials([
-      {text:'"After a rear-end collision on 580, I was dreading the whole process. Tri Valley handled my insurance, sourced the parts, and delivered my SUV looking better than before the accident."', who:'Erin C.', loc:'Livermore, CA'},
-      {text:'"Handled the insurance paperwork end to end so the whole process felt effortless. Kept me updated by text at every stage."', who:'Dan M.', loc:'Pleasanton, CA'},
-      {text:'"Third repair with this shop over the years, and every single one has been done right. Third-generation family business, and it shows."', who:'Kent S.', loc:'Livermore, CA'},
-      {text:'"Hail hit my Camry hard. PDR brought every panel back without a speck of new paint. You cannot tell it ever happened."', who:'Priya S.', loc:'Dublin, CA'},
-      {text:'"Straightforward estimate, no upselling, done exactly when they said it would be."', who:'Marcus B.', loc:'Pleasanton, CA'}
-    ], {scope: '#reviews'});
-  });
-</script>
 </body>
 </html>

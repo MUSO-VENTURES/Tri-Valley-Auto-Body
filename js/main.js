@@ -91,50 +91,40 @@
     render(0);
   }
 
-  /* ---------- Language toggle (display-only placeholder) ----------
-     EN stays put and active by default. The second slot is a dropdown
-     offering additional languages; picking one swaps it into the active
-     slot. No real translation is wired up — same scope as the old
-     EN/ES toggle, just extended to more options. */
+  /* ---------- Language dropdown ----------
+     Single accordion control: click to reveal all languages (English
+     included), pick one and the button label swaps to match. Swapping
+     the visible site copy per language is not wired up yet — see
+     window.TVAB.onLanguageChange for where that would hook in. */
   function initLangToggle() {
-    var enBtn = document.querySelector("[data-lang-en]");
-    var dropdown = document.querySelector("[data-lang-dropdown]");
-    if (!enBtn || !dropdown) return;
-    var trigger = dropdown.querySelector("[data-lang-trigger]");
-    var label = dropdown.querySelector("[data-lang-trigger-label]");
+    var wrap = document.querySelector("[data-lang-dropdown]");
+    if (!wrap) return;
+    var trigger = wrap.querySelector("[data-lang-trigger]");
+    var label = wrap.querySelector("[data-lang-trigger-label]");
     var options = Array.prototype.slice.call(
-      dropdown.querySelectorAll('[role="option"]')
+      wrap.querySelectorAll('[role="option"]')
     );
 
     function closeMenu() {
-      dropdown.classList.remove("open");
+      wrap.classList.remove("open");
       trigger.setAttribute("aria-expanded", "false");
     }
     function openMenu() {
-      dropdown.classList.add("open");
+      wrap.classList.add("open");
       trigger.setAttribute("aria-expanded", "true");
     }
 
     trigger.addEventListener("click", function (e) {
       e.stopPropagation();
-      if (dropdown.classList.contains("open")) closeMenu();
+      if (wrap.classList.contains("open")) closeMenu();
       else openMenu();
     });
 
     document.addEventListener("click", function (e) {
-      if (!dropdown.contains(e.target)) closeMenu();
+      if (!wrap.contains(e.target)) closeMenu();
     });
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape") closeMenu();
-    });
-
-    enBtn.addEventListener("click", function () {
-      enBtn.classList.add("active");
-      trigger.classList.remove("active");
-      options.forEach(function (o) {
-        o.setAttribute("aria-selected", "false");
-      });
-      closeMenu();
     });
 
     options.forEach(function (opt) {
@@ -144,9 +134,10 @@
         });
         opt.setAttribute("aria-selected", "true");
         label.textContent = opt.dataset.short || opt.textContent;
-        trigger.classList.add("active");
-        enBtn.classList.remove("active");
         closeMenu();
+        if (window.TVAB && typeof window.TVAB.onLanguageChange === "function") {
+          window.TVAB.onLanguageChange(opt.dataset.short, opt.textContent);
+        }
       }
       opt.addEventListener("click", choose);
       opt.addEventListener("keydown", function (e) {
