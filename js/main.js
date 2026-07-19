@@ -203,7 +203,7 @@
     if (!steps.length || !section) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    var DURATION = 2000;
+    var DURATION = 2500;
     var index = 0;
     var timer = null;
 
@@ -251,6 +251,11 @@
       measureRuleWidths();
       checkVisibility();
     });
+    // Safety net: re-check periodically too, so a stray/early visibility
+    // read (e.g. from layout shifting as fonts finish loading) can't
+    // permanently stall the cycle with no further scroll/resize to
+    // trigger a recheck.
+    setInterval(checkVisibility, 1500);
   }
 
   document.addEventListener("DOMContentLoaded", function () {
