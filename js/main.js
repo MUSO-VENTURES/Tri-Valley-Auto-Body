@@ -179,18 +179,25 @@
     sections.forEach(function (s) { observer.observe(s.el); });
   }
 
-  /* ---------- Clear the nav's active-link underline when the logo
-     is clicked, since it jumps back to the hero — a section the nav
-     links don't track, so the underline would otherwise stay stuck
-     on whatever section was active before. ---------- */
+  /* ---------- Logo click: jump to the true page top ----------
+     The default #top anchor jump honors each section's
+     scroll-margin-top (used elsewhere to clear the sticky nav), but
+     the hero sits right after the non-sticky topbar, so that same
+     offset overshoots and leaves the topbar clipped instead of fully
+     visible. Handling the click directly scrolls to the real y=0 and
+     clears the nav's active-link underline, since jumping back to the
+     hero isn't one of the sections the scroll-spy tracks and would
+     otherwise leave it stuck on whatever link was active before. */
   function initLogoResetsNav() {
     var logo = document.querySelector('a.logo[href="#top"]');
     var navLinks = document.querySelectorAll('nav.links a[href^="#"]');
-    if (!logo || !navLinks.length) return;
-    logo.addEventListener("click", function () {
+    if (!logo) return;
+    logo.addEventListener("click", function (e) {
+      e.preventDefault();
       navLinks.forEach(function (a) {
         a.removeAttribute("aria-current");
       });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
 
