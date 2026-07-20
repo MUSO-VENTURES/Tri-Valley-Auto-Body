@@ -195,7 +195,7 @@ nav.links a[aria-current="page"]{color:var(--text-hi);border-color:var(--accent)
 .breadcrumb a:hover{color:var(--accent);}
 
 /* SECTION helpers */
-section{padding:96px 0;position:relative;scroll-margin-top:96px;}
+section{padding:96px 0;position:relative;scroll-margin-top:71px;}
 @media (max-width:640px){section{padding:64px 0;}}
 .section-head{max-width:680px;margin-bottom:52px;}
 .section-head h2{font-size:42px;line-height:1.02;}
