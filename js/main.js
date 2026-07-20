@@ -177,6 +177,21 @@
       { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
     );
     sections.forEach(function (s) { observer.observe(s.el); });
+
+    // Clear the active underline whenever the page is back at its
+    // default top position, no matter how it got there — logo click,
+    // manual scroll, keyboard Home, browser back/forward. The hero
+    // isn't one of the sections tracked above, so nothing else clears
+    // the underline once you've scrolled back past it.
+    function clearIfAtTop() {
+      if (window.scrollY < 80) {
+        navLinks.forEach(function (a) {
+          a.removeAttribute("aria-current");
+        });
+      }
+    }
+    clearIfAtTop();
+    window.addEventListener("scroll", clearIfAtTop, { passive: true });
   }
 
   /* ---------- Logo click: jump to the true page top ----------
@@ -184,19 +199,14 @@
      scroll-margin-top (used elsewhere to clear the sticky nav), but
      the hero sits right after the non-sticky topbar, so that same
      offset overshoots and leaves the topbar clipped instead of fully
-     visible. Handling the click directly scrolls to the real y=0 and
-     clears the nav's active-link underline, since jumping back to the
-     hero isn't one of the sections the scroll-spy tracks and would
-     otherwise leave it stuck on whatever link was active before. */
+     visible. Handling the click directly scrolls to the real y=0
+     instead. (The nav underline clears itself once scrollY settles
+     near 0 — see clearIfAtTop in initScrollSpy.) */
   function initLogoResetsNav() {
     var logo = document.querySelector('a.logo[href="#top"]');
-    var navLinks = document.querySelectorAll('nav.links a[href^="#"]');
     if (!logo) return;
     logo.addEventListener("click", function (e) {
       e.preventDefault();
-      navLinks.forEach(function (a) {
-        a.removeAttribute("aria-current");
-      });
       window.scrollTo(0, 0);
     });
   }
