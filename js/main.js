@@ -32,6 +32,22 @@
     });
   }
 
+  /* ---------- Nav submenus (Services / About) ----------
+     Desktop: hover-driven, pure CSS (see .nav-item.has-submenu:hover).
+     Mobile (inside the slide-out menu, no hover): the chevron button
+     toggles an .open class that drives the same accordion transition. */
+  function initNavSubmenus() {
+    document.querySelectorAll(".nav-item.has-submenu").forEach(function (item) {
+      var toggle = item.querySelector(".nav-submenu-toggle");
+      if (!toggle) return;
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        var isOpen = item.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+    });
+  }
+
   /* ---------- Before/after slider(s) ----------
      Works for any number of .slider-frame blocks on a page.
      Each frame needs: .panel-before, .panel-after, .slider-handle, input.slider-input */
@@ -154,7 +170,9 @@
      currently in view (single-page layout with #anchors).
      --------------------------------------------------------- */
   function initScrollSpy() {
-    var navLinks = document.querySelectorAll('nav.links a[href^="#"]');
+    var navLinks = document.querySelectorAll(
+      'nav.links > a[href^="#"], nav.links > .nav-item > a.nav-link-trigger[href^="#"]'
+    );
     if (!navLinks.length) return;
     var sections = [];
     navLinks.forEach(function (a) {
@@ -236,8 +254,10 @@
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     var DURATION = 2500;
+    var START_DELAY = 500;
     var index = 0;
     var timer = null;
+    var startTimer = null;
 
     function measureRuleWidths() {
       steps.forEach(function (step) {
@@ -256,10 +276,17 @@
       timer = setTimeout(tick, DURATION);
     }
     function start() {
-      if (timer) return;
-      tick();
+      if (timer || startTimer) return;
+      startTimer = setTimeout(function () {
+        startTimer = null;
+        tick();
+      }, START_DELAY);
     }
     function stop() {
+      if (startTimer) {
+        clearTimeout(startTimer);
+        startTimer = null;
+      }
       clearTimeout(timer);
       timer = null;
       steps.forEach(function (step) {
@@ -319,6 +346,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     initMobileNav();
+    initNavSubmenus();
     initSliders();
     initLangToggle();
     initScrollSpy();

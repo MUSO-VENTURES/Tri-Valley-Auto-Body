@@ -52,9 +52,32 @@
       <img class="brand-logo" src="images/logo-nav.png" alt="Tri-Valley Auto Body">
     </a>
     <nav class="links">
-      <a href="#services" data-i18n="nav.services">Services</a>
+      <div class="nav-item has-submenu">
+        <a href="#services" class="nav-link-trigger" data-i18n="nav.services">Services</a>
+        <button type="button" class="nav-submenu-toggle" aria-label="Toggle Services submenu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-submenu">
+          <a href="#service-collision" data-i18n="services.collision.title">Collision Repair</a>
+          <a href="#service-painting" data-i18n="services.painting.title">Auto Painting</a>
+          <a href="#service-pdr" data-i18n="services.pdr.title">Paintless Dent Repair</a>
+          <a href="#service-frame" data-i18n="services.frame.title">Frame Straightening</a>
+          <a href="#service-glass" data-i18n="services.glass.title">Auto Glass</a>
+          <a href="#service-insurance" data-i18n="services.insurance.title">Insurance Claims Handling</a>
+        </div>
+      </div>
       <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
-      <a href="#about" data-i18n="nav.about">About</a>
+      <div class="nav-item has-submenu">
+        <a href="#about" class="nav-link-trigger" data-i18n="nav.about">About</a>
+        <button type="button" class="nav-submenu-toggle" aria-label="Toggle About submenu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-submenu">
+          <a href="#about" data-i18n="about.eyebrow">Our Story</a>
+          <a href="#team" data-i18n="team.eyebrow">Meet The Team</a>
+          <a href="#certifications" data-i18n="certs.eyebrow">Certifications &amp; Standing</a>
+        </div>
+      </div>
       <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
@@ -122,32 +145,32 @@
       <p data-i18n="services.intro">From a scuffed bumper to a full frame straighten, our I-CAR Gold Class techs handle it in-house.</p>
     </div>
     <div class="services-grid">
-      <div class="service-card">
+      <div class="service-card" id="service-collision">
         <h3 data-i18n="services.collision.title">Collision Repair</h3>
         <p data-i18n="services.collision.desc">Full structural and cosmetic repair for any size accident. Unibody and frame damage, panel replacement, and OEM-spec reassembly — backed by a lifetime workmanship warranty.</p>
         <a href="#estimate" data-i18n="cta.getEstimate">Get an estimate →</a>
       </div>
-      <div class="service-card">
+      <div class="service-card" id="service-painting">
         <h3 data-i18n="services.painting.title">Auto Painting</h3>
         <p data-i18n="services.painting.desc">Computer color-matched paint applied in our down-draft booth. Blend, clear, and cure to a factory finish — on a single panel or a full respray.</p>
         <a href="#estimate" data-i18n="cta.getEstimate">Get an estimate →</a>
       </div>
-      <div class="service-card">
+      <div class="service-card" id="service-pdr">
         <h3 data-i18n="services.pdr.title">Paintless Dent Repair</h3>
         <p data-i18n="services.pdr.desc">Hail damage and minor door dings removed without cutting or repainting, preserving your factory finish and resale value.</p>
         <a href="#estimate" data-i18n="cta.getEstimate">Get an estimate →</a>
       </div>
-      <div class="service-card">
+      <div class="service-card" id="service-frame">
         <h3 data-i18n="services.frame.title">Frame Straightening</h3>
         <p data-i18n="services.frame.desc">Computerized frame measuring and hydraulic pulling to restore your vehicle's structure to OEM tolerances.</p>
         <a href="#estimate" data-i18n="cta.getEstimate">Get an estimate →</a>
       </div>
-      <div class="service-card">
+      <div class="service-card" id="service-glass">
         <h3 data-i18n="services.glass.title">Auto Glass</h3>
         <p data-i18n="services.glass.desc">Windshield, back glass, and window replacement with OEM or OEM-equivalent glass, including ADAS camera recalibration.</p>
         <a href="#estimate" data-i18n="cta.getEstimate">Get an estimate →</a>
       </div>
-      <div class="service-card">
+      <div class="service-card" id="service-insurance">
         <h3 data-i18n="services.insurance.title">Insurance Claims Handling</h3>
         <p data-i18n="services.insurance.desc">Direct Repair Program partner with most major carriers — we can bill them directly and manage the paperwork.</p>
         <a href="#insurance" data-i18n="cta.lookupCarrier">Look up your carrier →</a>
@@ -234,7 +257,7 @@
   </div>
 </section>
 
-<section class="dark-sec grain">
+<section class="dark-sec grain" id="team">
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow" data-i18n="team.eyebrow">Meet The Team</span>
@@ -250,7 +273,7 @@
   </div>
 </section>
 
-<section style="background:var(--white);">
+<section style="background:var(--white);" id="certifications">
   <div class="wrap">
     <span class="eyebrow" data-i18n="certs.eyebrow">Certifications &amp; Standing</span>
     <div class="pill-row">
