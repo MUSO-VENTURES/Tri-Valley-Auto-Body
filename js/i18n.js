@@ -123,6 +123,8 @@
         labelService: "Service Needed",
         notSure: "Not sure",
         labelDetails: "Describe The Damage",
+        labelPhotos: "Photos (optional)",
+        photosCta: "Take a photo or upload from your device",
         submit: "Request Estimate"
       },
       booking: { eyebrow: "Or Skip Ahead", heading: "Book A Drop-Off Time", intro: "Pick a day and time that works — we'll confirm by text." },
@@ -266,6 +268,8 @@
         labelService: "Servicio Necesario",
         notSure: "No estoy seguro",
         labelDetails: "Describa El Daño",
+        labelPhotos: "Fotos (opcional)",
+        photosCta: "Toma una foto o sube una desde tu dispositivo",
         submit: "Solicitar Presupuesto"
       },
       booking: { eyebrow: "O Adelántese", heading: "Reserve Una Hora De Entrega", intro: "Elija un día y hora que le convenga — confirmaremos por mensaje de texto." },
@@ -409,6 +413,8 @@
         labelService: "الخدمة المطلوبة",
         notSure: "غير متأكد",
         labelDetails: "صف الضرر",
+        labelPhotos: "الصور (اختياري)",
+        photosCta: "التقط صورة أو ارفعها من جهازك",
         submit: "طلب تقدير"
       },
       booking: { eyebrow: "أو تخطَّ الخطوات", heading: "احجز موعد تسليم السيارة", intro: "اختر يومًا ووقتًا مناسبين — سنؤكد ذلك عبر رسالة نصية." },
@@ -552,6 +558,8 @@
         labelService: "所需服务",
         notSure: "不确定",
         labelDetails: "描述损伤情况",
+        labelPhotos: "照片（可选）",
+        photosCta: "拍照或从您的设备上传",
         submit: "申请估价"
       },
       booking: { eyebrow: "或直接预约", heading: "预约送修时间", intro: "选择合适的日期和时间——我们会通过短信确认。" },
@@ -695,6 +703,8 @@
         labelService: "જરૂરી સેવા",
         notSure: "ખાતરી નથી",
         labelDetails: "નુકસાનનું વર્ણન કરો",
+        labelPhotos: "ફોટા (વૈકલ્પિક)",
+        photosCta: "ફોટો લો અથવા તમારા ડિવાઇસમાંથી અપલોડ કરો",
         submit: "અંદાજ માંગો"
       },
       booking: { eyebrow: "અથવા આગળ વધો", heading: "ડ્રોપ-ઓફ સમય બુક કરો", intro: "તમને અનુકૂળ દિવસ અને સમય પસંદ કરો — અમે ટેક્સ્ટ દ્વારા પુષ્ટિ કરીશું." },
@@ -838,6 +848,8 @@
         labelService: "आवश्यक सेवा",
         notSure: "पक्का नहीं",
         labelDetails: "क्षति का वर्णन करें",
+        labelPhotos: "फ़ोटो (वैकल्पिक)",
+        photosCta: "फ़ोटो लें या अपने डिवाइस से अपलोड करें",
         submit: "अनुमान का अनुरोध करें"
       },
       booking: { eyebrow: "या आगे बढ़ें", heading: "ड्रॉप-ऑफ समय बुक करें", intro: "एक ऐसा दिन और समय चुनें जो काम करे — हम टेक्स्ट द्वारा पुष्टि करेंगे।" },
@@ -981,6 +993,8 @@
         labelService: "Servizio Richiesto",
         notSure: "Non sono sicuro",
         labelDetails: "Descrivi Il Danno",
+        labelPhotos: "Foto (facoltativo)",
+        photosCta: "Scatta una foto o caricane una dal tuo dispositivo",
         submit: "Richiedi Preventivo"
       },
       booking: { eyebrow: "Oppure Salta Avanti", heading: "Prenota Un Orario Di Consegna", intro: "Scegli un giorno e un orario che vanno bene — confermeremo via SMS." },
@@ -1124,6 +1138,8 @@
         labelService: "필요한 서비스",
         notSure: "잘 모르겠음",
         labelDetails: "손상 내용 설명",
+        labelPhotos: "사진 (선택 사항)",
+        photosCta: "사진을 촬영하거나 기기에서 업로드하세요",
         submit: "견적 요청하기"
       },
       booking: { eyebrow: "또는 바로 예약", heading: "입고 시간 예약하기", intro: "편한 날짜와 시간을 선택하세요 — 문자로 확인해 드립니다." },
@@ -1267,6 +1283,8 @@
         labelService: "Potrzebna Usługa",
         notSure: "Nie jestem pewien",
         labelDetails: "Opisz Uszkodzenie",
+        labelPhotos: "Zdjęcia (opcjonalnie)",
+        photosCta: "Zrób zdjęcie lub prześlij je ze swojego urządzenia",
         submit: "Poproś o Wycenę"
       },
       booking: { eyebrow: "Lub Przejdź Od Razu", heading: "Zarezerwuj Termin Oddania Auta", intro: "Wybierz dogodny dzień i godzinę — potwierdzimy SMS-em." },
@@ -1410,6 +1428,8 @@
         labelService: "Serviço Necessário",
         notSure: "Não tenho certeza",
         labelDetails: "Descreva O Dano",
+        labelPhotos: "Fotos (opcional)",
+        photosCta: "Tire uma foto ou envie uma do seu dispositivo",
         submit: "Solicitar Orçamento"
       },
       booking: { eyebrow: "Ou Vá Direto", heading: "Agende Um Horário De Entrega", intro: "Escolha um dia e horário que funcionem para você — confirmaremos por mensagem de texto." },

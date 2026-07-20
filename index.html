@@ -342,6 +342,17 @@
           <label for="f-details" data-i18n="estimate.labelDetails">Describe The Damage</label>
           <textarea id="f-details" name="details" rows="4" placeholder="What happened, and where's the damage?"></textarea>
         </div>
+        <div class="field-full">
+          <label for="f-photos" data-i18n="estimate.labelPhotos">Photos (optional)</label>
+          <div class="photo-upload">
+            <input type="file" id="f-photos" name="photos" accept="image/*" capture="environment" multiple class="sr-only photo-upload-input">
+            <label for="f-photos" class="photo-upload-trigger">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3l2-2h6l2 2h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="4"/></svg>
+              <span data-i18n="estimate.photosCta">Take a photo or upload from your device</span>
+            </label>
+            <div class="photo-upload-previews" data-photo-previews></div>
+          </div>
+        </div>
       </div>
       <div style="margin-top:26px;">
         <button type="submit" class="btn btn-accent" data-i18n="estimate.submit">Request Estimate</button>

@@ -103,6 +103,70 @@
   }
 
   /* ---------------------------------------------------------
+     1a) ESTIMATE FORM — photo upload previews
+     Native <input type="file"> FileLists are read-only, so removing a
+     single photo means rebuilding the selection via the DataTransfer
+     API and reassigning it to input.files. Formspree accepts file
+     uploads through the same FormData submit already used for the
+     rest of the form — no separate upload step needed. New picks are
+     added to the running selection rather than replacing it, so users
+     can build up a set of photos across multiple taps.
+     --------------------------------------------------------- */
+  function initPhotoUpload() {
+    var input = document.getElementById("f-photos");
+    var previews = document.querySelector("[data-photo-previews]");
+    if (!input || !previews) return;
+    var form = input.closest("form");
+    var files = [];
+
+    function sync() {
+      var dt = new DataTransfer();
+      files.forEach(function (f) {
+        dt.items.add(f);
+      });
+      input.files = dt.files;
+    }
+
+    function render() {
+      previews.innerHTML = "";
+      files.forEach(function (file, i) {
+        var url = URL.createObjectURL(file);
+        var item = document.createElement("div");
+        item.className = "photo-preview";
+        var img = document.createElement("img");
+        img.src = url;
+        img.alt = "";
+        var removeBtn = document.createElement("button");
+        removeBtn.type = "button";
+        removeBtn.className = "photo-preview-remove";
+        removeBtn.setAttribute("aria-label", "Remove photo");
+        removeBtn.textContent = "×";
+        removeBtn.addEventListener("click", function () {
+          files.splice(i, 1);
+          sync();
+          render();
+        });
+        item.appendChild(img);
+        item.appendChild(removeBtn);
+        previews.appendChild(item);
+      });
+    }
+
+    input.addEventListener("change", function () {
+      files = files.concat(Array.prototype.slice.call(input.files));
+      sync();
+      render();
+    });
+
+    if (form) {
+      form.addEventListener("reset", function () {
+        files = [];
+        render();
+      });
+    }
+  }
+
+  /* ---------------------------------------------------------
      1b) CONTACT FORM  (Formspree — same account as the estimate form)
      --------------------------------------------------------- */
   function initContactForm() {
@@ -396,6 +460,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     initEstimateForm();
+    initPhotoUpload();
     initContactForm();
     initGalleryPage();
     initInsuranceWidget();
